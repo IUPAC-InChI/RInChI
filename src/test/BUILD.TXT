@@ -1,0 +1,43 @@
+In the "test_suite" folder you will find the "rinchi_test_suite" project, both
+as an MSVC solution file ("rinchi_test_suite_msvc.sln") for builiding on Windows
+with Microsoft Visual Studio 2010 or later, and as a QT creator project file
+("rinchi_test_suite_qt.pro") for builiding on Linux.
+
+Builds on Linux can also be done by directly using the Makefile-s produced by qmake.
+
+The test suite requires the boost libraries boost-filesystem and boost-system
+so you will need those two development libraries present in order to build. The
+test suite was developed using boost 1.40 on Linux and boost 1.57 on Windows so
+boost version 1.40 or later should be sufficient.
+
+When building with Visual Studio you will most likely have to adjust the include
+path in the solution file to match your location and version of Boost (Project
+Property pages => Configuration Properties => C/C++ => General => Additional
+Include Directories).
+
+To successfully run the test suite, make sure that its working directory is this
+directory, that is: .../rinchi/test/. This is setup in the MSVC and QT project, but
+if you run the test executable directly you need to explicitly take care of the
+working directory, e.g.
+
+	cd %RINCHI_ROOT%\rinchi\test\
+	.\test_suite\Release\rinchi_test_suite_msvc.exe
+
+One of the tests is an InChI regression test that checks that molfiles read by
+RInChI produces InChIs that match what the standard InChI 1.04 executable produces.
+This test uses a standard test dataset from InChI 1.04. You will need to download
+this dataset from
+
+	http://www.inchi-trust.org/download/104/INCHI-1-TEST.zip
+
+	Unpack the INCHI-1-TEST.zip file folder and place the "INCHI-1-TEST"
+	folder in the same parent folder as RInChI's "src" folder. Unpack the
+	test result file "INCHI-1-TEST\test\InChI_TestSet-result.zip" and place
+	the resulting text files in the same folder as the zip-file, that is,
+	in "INCHI-1-TEST\test\". The regression test uses the file
+	"InChI_TestSet-std-01.txt".
+
+NOTE:
+	The debug Windows builds are configured to skip this regression test. The debug build
+	makes the regression test very very slow - so use a Release build to enable the
+	regression test when on Windows.

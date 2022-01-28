@@ -1,0 +1,16 @@
+; rinchi_ora_cartridge.def : Declares the module parameters for the DLL.
+
+LIBRARY
+
+EXPORTS
+	rinorca_latest_err_msg
+
+	rinorca_debug_input_buffer
+	rinorca_set_input_chunk
+
+	rinorca_rinchi_from_file
+	rinorca_rinchikey_from_file
+	rinorca_rinchikey_from_rinchi
+	rinorca_file_from_rinchi
+
+    ; Explicit exports can go here

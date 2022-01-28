@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8DD76F650486A84900D96B5E /* rinchi_cmdline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* rinchi_cmdline.cpp */; settings = {ATTRIBUTES = (); }; };
+		8DD76F6A0486A84900D96B5E /* rinchi_cmdline_pm.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6859E8B029090EE04C91782 /* rinchi_cmdline_pm.1 */; };
+		B8D7B0DE1D2E6AFC0024A430 /* ichi_bns.c in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B0971D2E6AFC0024A430 /* ichi_bns.c */; };
+		B8D7B0DF1D2E6AFC0024A430 /* ichi_bns.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B0981D2E6AFC0024A430 /* ichi_bns.h */; };
+		B8D7B0E01D2E6AFC0024A430 /* ichi_io.c in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B0991D2E6AFC0024A430 /* ichi_io.c */; };
+		B8D7B0E11D2E6AFC0024A430 /* ichi_io.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B09A1D2E6AFC0024A430 /* ichi_io.h */; };
+		B8D7B0E21D2E6AFC0024A430 /* ichi.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B09B1D2E6AFC0024A430 /* ichi.h */; };
+		B8D7B0E31D2E6AFC0024A430 /* ichican2.c in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B09C1D2E6AFC0024A430 /* ichican2.c */; };
+		B8D7B0E41D2E6AFC0024A430 /* ichicano.c in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B09D1D2E6AFC0024A430 /* ichicano.c */; };
+		B8D7B0E51D2E6AFC0024A430 /* ichicano.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B09E1D2E6AFC0024A430 /* ichicano.h */; };
+		B8D7B0E61D2E6AFC0024A430 /* ichicans.c in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B09F1D2E6AFC0024A430 /* ichicans.c */; };
+		B8D7B0E71D2E6AFC0024A430 /* ichicant.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B0A01D2E6AFC0024A430 /* ichicant.h */; };
+		B8D7B0E81D2E6AFC0024A430 /* ichicomn.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B0A11D2E6AFC0024A430 /* ichicomn.h */; };
+		B8D7B0E91D2E6AFC0024A430 /* ichicomp.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B0A21D2E6AFC0024A430 /* ichicomp.h */; };
+		B8D7B0EA1D2E6AFC0024A430 /* ichidrp.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B0A31D2E6AFC0024A430 /* ichidrp.h */; };
+		B8D7B0EB1D2E6AFC0024A430 /* ichierr.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B0A41D2E6AFC0024A430 /* ichierr.h */; };
+		B8D7B0EC1D2E6AFC0024A430 /* ichiisot.c in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B0A51D2E6AFC0024A430 /* ichiisot.c */; };
+		B8D7B0ED1D2E6AFC0024A430 /* ichilnct.c in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B0A61D2E6AFC0024A430 /* ichilnct.c */; };
+		B8D7B0EE1D2E6AFC0024A430 /* ichimain.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B0A71D2E6AFC0024A430 /* ichimain.h */; };
+		B8D7B0EF1D2E6AFC0024A430 /* ichimak2.c in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B0A81D2E6AFC0024A430 /* ichimak2.c */; };
+		B8D7B0F01D2E6AFC0024A430 /* ichimake.c in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B0A91D2E6AFC0024A430 /* ichimake.c */; };
+		B8D7B0F11D2E6AFC0024A430 /* ichimake.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B0AA1D2E6AFC0024A430 /* ichimake.h */; };
+		B8D7B0F21D2E6AFC0024A430 /* ichimap1.c in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B0AB1D2E6AFC0024A430 /* ichimap1.c */; };
+		B8D7B0F31D2E6AFC0024A430 /* ichimap2.c in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B0AC1D2E6AFC0024A430 /* ichimap2.c */; };
+		B8D7B0F41D2E6AFC0024A430 /* ichimap4.c in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B0AD1D2E6AFC0024A430 /* ichimap4.c */; };
+		B8D7B0F51D2E6AFC0024A430 /* ichinorm.c in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B0AE1D2E6AFC0024A430 /* ichinorm.c */; };
+		B8D7B0F61D2E6AFC0024A430 /* ichinorm.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B0AF1D2E6AFC0024A430 /* ichinorm.h */; };
+		B8D7B0F71D2E6AFC0024A430 /* ichiparm.c in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B0B01D2E6AFC0024A430 /* ichiparm.c */; };
+		B8D7B0F81D2E6AFC0024A430 /* ichiparm.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B0B11D2E6AFC0024A430 /* ichiparm.h */; };
+		B8D7B0F91D2E6AFC0024A430 /* ichiprt1.c in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B0B21D2E6AFC0024A430 /* ichiprt1.c */; };
+		B8D7B0FA1D2E6AFC0024A430 /* ichiprt2.c in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B0B31D2E6AFC0024A430 /* ichiprt2.c */; };
+		B8D7B0FB1D2E6AFC0024A430 /* ichiprt3.c in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B0B41D2E6AFC0024A430 /* ichiprt3.c */; };
+		B8D7B0FC1D2E6AFC0024A430 /* ichiqueu.c in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B0B51D2E6AFC0024A430 /* ichiqueu.c */; };
+		B8D7B0FD1D2E6AFC0024A430 /* ichiread.c in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B0B61D2E6AFC0024A430 /* ichiread.c */; };
+		B8D7B0FE1D2E6AFC0024A430 /* ichiring.c in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B0B71D2E6AFC0024A430 /* ichiring.c */; };
+		B8D7B0FF1D2E6AFC0024A430 /* ichiring.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B0B81D2E6AFC0024A430 /* ichiring.h */; };
+		B8D7B1001D2E6AFC0024A430 /* ichirvr1.c in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B0B91D2E6AFC0024A430 /* ichirvr1.c */; };
+		B8D7B1011D2E6AFC0024A430 /* ichirvr2.c in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B0BA1D2E6AFC0024A430 /* ichirvr2.c */; };
+		B8D7B1021D2E6AFC0024A430 /* ichirvr3.c in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B0BB1D2E6AFC0024A430 /* ichirvr3.c */; };
+		B8D7B1031D2E6AFC0024A430 /* ichirvr4.c in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B0BC1D2E6AFC0024A430 /* ichirvr4.c */; };
+		B8D7B1041D2E6AFC0024A430 /* ichirvr5.c in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B0BD1D2E6AFC0024A430 /* ichirvr5.c */; };
+		B8D7B1051D2E6AFC0024A430 /* ichirvr6.c in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B0BE1D2E6AFC0024A430 /* ichirvr6.c */; };
+		B8D7B1061D2E6AFC0024A430 /* ichirvr7.c in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B0BF1D2E6AFC0024A430 /* ichirvr7.c */; };
+		B8D7B1071D2E6AFC0024A430 /* ichirvrs.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B0C01D2E6AFC0024A430 /* ichirvrs.h */; };
+		B8D7B1081D2E6AFC0024A430 /* ichisize.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B0C11D2E6AFC0024A430 /* ichisize.h */; };
+		B8D7B1091D2E6AFC0024A430 /* ichisort.c in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B0C21D2E6AFC0024A430 /* ichisort.c */; };
+		B8D7B10A1D2E6AFC0024A430 /* ichister.c in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B0C31D2E6AFC0024A430 /* ichister.c */; };
+		B8D7B10B1D2E6AFC0024A430 /* ichister.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B0C41D2E6AFC0024A430 /* ichister.h */; };
+		B8D7B10C1D2E6AFC0024A430 /* ichitaut.c in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B0C51D2E6AFC0024A430 /* ichitaut.c */; };
+		B8D7B10D1D2E6AFC0024A430 /* ichitaut.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B0C61D2E6AFC0024A430 /* ichitaut.h */; };
+		B8D7B10E1D2E6AFC0024A430 /* ichitime.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B0C71D2E6AFC0024A430 /* ichitime.h */; };
+		B8D7B10F1D2E6AFC0024A430 /* ikey_base26.c in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B0C81D2E6AFC0024A430 /* ikey_base26.c */; };
+		B8D7B1101D2E6AFC0024A430 /* ikey_base26.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B0C91D2E6AFC0024A430 /* ikey_base26.h */; };
+		B8D7B1111D2E6AFC0024A430 /* ikey_dll.c in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B0CA1D2E6AFC0024A430 /* ikey_dll.c */; };
+		B8D7B1121D2E6AFC0024A430 /* inchi_api.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B0CB1D2E6AFC0024A430 /* inchi_api.h */; };
+		B8D7B1131D2E6AFC0024A430 /* inchi_dll_a.c in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B0CC1D2E6AFC0024A430 /* inchi_dll_a.c */; };
+		B8D7B1141D2E6AFC0024A430 /* inchi_dll_a.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B0CD1D2E6AFC0024A430 /* inchi_dll_a.h */; };
+		B8D7B1151D2E6AFC0024A430 /* inchi_dll_a2.c in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B0CE1D2E6AFC0024A430 /* inchi_dll_a2.c */; };
+		B8D7B1161D2E6AFC0024A430 /* inchi_dll_main.c in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B0CF1D2E6AFC0024A430 /* inchi_dll_main.c */; };
+		B8D7B1171D2E6AFC0024A430 /* inchi_dll_main.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B0D01D2E6AFC0024A430 /* inchi_dll_main.h */; };
+		B8D7B1181D2E6AFC0024A430 /* inchi_dll.c in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B0D11D2E6AFC0024A430 /* inchi_dll.c */; };
+		B8D7B1191D2E6AFC0024A430 /* inchicmp.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B0D21D2E6AFC0024A430 /* inchicmp.h */; };
+		B8D7B11A1D2E6AFC0024A430 /* incomdef.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B0D31D2E6AFC0024A430 /* incomdef.h */; };
+		B8D7B11B1D2E6AFC0024A430 /* inpdef.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B0D41D2E6AFC0024A430 /* inpdef.h */; };
+		B8D7B11C1D2E6AFC0024A430 /* lreadmol.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B0D51D2E6AFC0024A430 /* lreadmol.h */; };
+		B8D7B11D1D2E6AFC0024A430 /* mode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B0D61D2E6AFC0024A430 /* mode.h */; };
+		B8D7B11E1D2E6AFC0024A430 /* runichi.c in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B0D71D2E6AFC0024A430 /* runichi.c */; };
+		B8D7B11F1D2E6AFC0024A430 /* sha2.c in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B0D81D2E6AFC0024A430 /* sha2.c */; };
+		B8D7B1201D2E6AFC0024A430 /* sha2.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B0D91D2E6AFC0024A430 /* sha2.h */; };
+		B8D7B1211D2E6AFC0024A430 /* strutil.c in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B0DA1D2E6AFC0024A430 /* strutil.c */; };
+		B8D7B1221D2E6AFC0024A430 /* strutil.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B0DB1D2E6AFC0024A430 /* strutil.h */; };
+		B8D7B1231D2E6AFC0024A430 /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B0DC1D2E6AFC0024A430 /* util.c */; };
+		B8D7B1241D2E6AFC0024A430 /* util.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B0DD1D2E6AFC0024A430 /* util.h */; };
+		B8D7B1301D2E6B7D0024A430 /* inchi_api_intf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B1251D2E6B7D0024A430 /* inchi_api_intf.cpp */; };
+		B8D7B1311D2E6B7D0024A430 /* inchi_api_intf.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B1261D2E6B7D0024A430 /* inchi_api_intf.h */; };
+		B8D7B1321D2E6B7D0024A430 /* inchi_generator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B1271D2E6B7D0024A430 /* inchi_generator.cpp */; };
+		B8D7B1331D2E6B7D0024A430 /* inchi_generator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B1281D2E6B7D0024A430 /* inchi_generator.h */; };
+		B8D7B1341D2E6B7D0024A430 /* rinchi_hashing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B1291D2E6B7D0024A430 /* rinchi_hashing.cpp */; };
+		B8D7B1351D2E6B7D0024A430 /* rinchi_hashing.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B12A1D2E6B7D0024A430 /* rinchi_hashing.h */; };
+		B8D7B1361D2E6B7D0024A430 /* rinchi_logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B12B1D2E6B7D0024A430 /* rinchi_logger.cpp */; };
+		B8D7B1371D2E6B7D0024A430 /* rinchi_logger.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B12C1D2E6B7D0024A430 /* rinchi_logger.h */; };
+		B8D7B1381D2E6B7D0024A430 /* rinchi_platform.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B12D1D2E6B7D0024A430 /* rinchi_platform.h */; };
+		B8D7B1391D2E6B7D0024A430 /* rinchi_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B12E1D2E6B7D0024A430 /* rinchi_utils.cpp */; };
+		B8D7B13A1D2E6B7D0024A430 /* rinchi_utils.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B12F1D2E6B7D0024A430 /* rinchi_utils.h */; };
+		B8D7B1471D2E6BFD0024A430 /* mdl_molfile_reader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B13B1D2E6BFD0024A430 /* mdl_molfile_reader.cpp */; };
+		B8D7B1481D2E6BFD0024A430 /* mdl_molfile_reader.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B13C1D2E6BFD0024A430 /* mdl_molfile_reader.h */; };
+		B8D7B1491D2E6BFD0024A430 /* mdl_molfile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B13D1D2E6BFD0024A430 /* mdl_molfile.cpp */; };
+		B8D7B14A1D2E6BFD0024A430 /* mdl_molfile.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B13E1D2E6BFD0024A430 /* mdl_molfile.h */; };
+		B8D7B14B1D2E6BFD0024A430 /* mdl_rdfile_reader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B13F1D2E6BFD0024A430 /* mdl_rdfile_reader.cpp */; };
+		B8D7B14C1D2E6BFD0024A430 /* mdl_rdfile_reader.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B1401D2E6BFD0024A430 /* mdl_rdfile_reader.h */; };
+		B8D7B14D1D2E6BFD0024A430 /* mdl_rdfile.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B1411D2E6BFD0024A430 /* mdl_rdfile.h */; };
+		B8D7B14E1D2E6BFD0024A430 /* mdl_rxnfile_reader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B1421D2E6BFD0024A430 /* mdl_rxnfile_reader.cpp */; };
+		B8D7B14F1D2E6BFD0024A430 /* mdl_rxnfile_reader.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B1431D2E6BFD0024A430 /* mdl_rxnfile_reader.h */; };
+		B8D7B1501D2E6BFD0024A430 /* mdl_rxnfile.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B1441D2E6BFD0024A430 /* mdl_rxnfile.h */; };
+		B8D7B1511D2E6BFD0024A430 /* rinchi_reader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B1451D2E6BFD0024A430 /* rinchi_reader.cpp */; };
+		B8D7B1521D2E6BFD0024A430 /* rinchi_reader.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B1461D2E6BFD0024A430 /* rinchi_reader.h */; };
+		B8D7B1571D2E6C310024A430 /* rinchi_consts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B1531D2E6C310024A430 /* rinchi_consts.cpp */; };
+		B8D7B1581D2E6C310024A430 /* rinchi_consts.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B1541D2E6C310024A430 /* rinchi_consts.h */; };
+		B8D7B1591D2E6C310024A430 /* rinchi_reaction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B1551D2E6C310024A430 /* rinchi_reaction.cpp */; };
+		B8D7B15A1D2E6C310024A430 /* rinchi_reaction.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B1561D2E6C310024A430 /* rinchi_reaction.h */; };
+		B8D7B15F1D2E6C650024A430 /* mdl_rdfile_writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B15B1D2E6C650024A430 /* mdl_rdfile_writer.cpp */; };
+		B8D7B1601D2E6C650024A430 /* mdl_rdfile_writer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B15C1D2E6C650024A430 /* mdl_rdfile_writer.h */; };
+		B8D7B1611D2E6C650024A430 /* mdl_rxnfile_writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8D7B15D1D2E6C650024A430 /* mdl_rxnfile_writer.cpp */; };
+		B8D7B1621D2E6C650024A430 /* mdl_rxnfile_writer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8D7B15E1D2E6C650024A430 /* mdl_rxnfile_writer.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8DD76F690486A84900D96B5E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				8DD76F6A0486A84900D96B5E /* rinchi_cmdline_pm.1 in CopyFiles */,
+				B8D7B0DF1D2E6AFC0024A430 /* ichi_bns.h in CopyFiles */,
+				B8D7B0E11D2E6AFC0024A430 /* ichi_io.h in CopyFiles */,
+				B8D7B0E21D2E6AFC0024A430 /* ichi.h in CopyFiles */,
+				B8D7B0E51D2E6AFC0024A430 /* ichicano.h in CopyFiles */,
+				B8D7B0E71D2E6AFC0024A430 /* ichicant.h in CopyFiles */,
+				B8D7B0E81D2E6AFC0024A430 /* ichicomn.h in CopyFiles */,
+				B8D7B0E91D2E6AFC0024A430 /* ichicomp.h in CopyFiles */,
+				B8D7B0EA1D2E6AFC0024A430 /* ichidrp.h in CopyFiles */,
+				B8D7B0EB1D2E6AFC0024A430 /* ichierr.h in CopyFiles */,
+				B8D7B0EE1D2E6AFC0024A430 /* ichimain.h in CopyFiles */,
+				B8D7B0F11D2E6AFC0024A430 /* ichimake.h in CopyFiles */,
+				B8D7B0F61D2E6AFC0024A430 /* ichinorm.h in CopyFiles */,
+				B8D7B0F81D2E6AFC0024A430 /* ichiparm.h in CopyFiles */,
+				B8D7B0FF1D2E6AFC0024A430 /* ichiring.h in CopyFiles */,
+				B8D7B1071D2E6AFC0024A430 /* ichirvrs.h in CopyFiles */,
+				B8D7B1081D2E6AFC0024A430 /* ichisize.h in CopyFiles */,
+				B8D7B10B1D2E6AFC0024A430 /* ichister.h in CopyFiles */,
+				B8D7B10D1D2E6AFC0024A430 /* ichitaut.h in CopyFiles */,
+				B8D7B10E1D2E6AFC0024A430 /* ichitime.h in CopyFiles */,
+				B8D7B1101D2E6AFC0024A430 /* ikey_base26.h in CopyFiles */,
+				B8D7B1121D2E6AFC0024A430 /* inchi_api.h in CopyFiles */,
+				B8D7B1141D2E6AFC0024A430 /* inchi_dll_a.h in CopyFiles */,
+				B8D7B1171D2E6AFC0024A430 /* inchi_dll_main.h in CopyFiles */,
+				B8D7B1191D2E6AFC0024A430 /* inchicmp.h in CopyFiles */,
+				B8D7B11A1D2E6AFC0024A430 /* incomdef.h in CopyFiles */,
+				B8D7B11B1D2E6AFC0024A430 /* inpdef.h in CopyFiles */,
+				B8D7B11C1D2E6AFC0024A430 /* lreadmol.h in CopyFiles */,
+				B8D7B11D1D2E6AFC0024A430 /* mode.h in CopyFiles */,
+				B8D7B1201D2E6AFC0024A430 /* sha2.h in CopyFiles */,
+				B8D7B1221D2E6AFC0024A430 /* strutil.h in CopyFiles */,
+				B8D7B1241D2E6AFC0024A430 /* util.h in CopyFiles */,
+				B8D7B1311D2E6B7D0024A430 /* inchi_api_intf.h in CopyFiles */,
+				B8D7B1331D2E6B7D0024A430 /* inchi_generator.h in CopyFiles */,
+				B8D7B1351D2E6B7D0024A430 /* rinchi_hashing.h in CopyFiles */,
+				B8D7B1371D2E6B7D0024A430 /* rinchi_logger.h in CopyFiles */,
+				B8D7B1381D2E6B7D0024A430 /* rinchi_platform.h in CopyFiles */,
+				B8D7B13A1D2E6B7D0024A430 /* rinchi_utils.h in CopyFiles */,
+				B8D7B1481D2E6BFD0024A430 /* mdl_molfile_reader.h in CopyFiles */,
+				B8D7B14A1D2E6BFD0024A430 /* mdl_molfile.h in CopyFiles */,
+				B8D7B14C1D2E6BFD0024A430 /* mdl_rdfile_reader.h in CopyFiles */,
+				B8D7B14D1D2E6BFD0024A430 /* mdl_rdfile.h in CopyFiles */,
+				B8D7B14F1D2E6BFD0024A430 /* mdl_rxnfile_reader.h in CopyFiles */,
+				B8D7B1501D2E6BFD0024A430 /* mdl_rxnfile.h in CopyFiles */,
+				B8D7B1521D2E6BFD0024A430 /* rinchi_reader.h in CopyFiles */,
+				B8D7B1581D2E6C310024A430 /* rinchi_consts.h in CopyFiles */,
+				B8D7B15A1D2E6C310024A430 /* rinchi_reaction.h in CopyFiles */,
+				B8D7B1601D2E6C650024A430 /* mdl_rdfile_writer.h in CopyFiles */,
+				B8D7B1621D2E6C650024A430 /* mdl_rxnfile_writer.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08FB7796FE84155DC02AAC07 /* rinchi_cmdline.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rinchi_cmdline.cpp; sourceTree = "<group>"; };
+		8DD76F6C0486A84900D96B5E /* rinchi_cmdline_pm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = rinchi_cmdline_pm; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8D7B0971D2E6AFC0024A430 /* ichi_bns.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ichi_bns.c; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichi_bns.c"; sourceTree = SOURCE_ROOT; };
+		B8D7B0981D2E6AFC0024A430 /* ichi_bns.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ichi_bns.h; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichi_bns.h"; sourceTree = SOURCE_ROOT; };
+		B8D7B0991D2E6AFC0024A430 /* ichi_io.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ichi_io.c; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichi_io.c"; sourceTree = SOURCE_ROOT; };
+		B8D7B09A1D2E6AFC0024A430 /* ichi_io.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ichi_io.h; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichi_io.h"; sourceTree = SOURCE_ROOT; };
+		B8D7B09B1D2E6AFC0024A430 /* ichi.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ichi.h; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichi.h"; sourceTree = SOURCE_ROOT; };
+		B8D7B09C1D2E6AFC0024A430 /* ichican2.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ichican2.c; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichican2.c"; sourceTree = SOURCE_ROOT; };
+		B8D7B09D1D2E6AFC0024A430 /* ichicano.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ichicano.c; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichicano.c"; sourceTree = SOURCE_ROOT; };
+		B8D7B09E1D2E6AFC0024A430 /* ichicano.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ichicano.h; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichicano.h"; sourceTree = SOURCE_ROOT; };
+		B8D7B09F1D2E6AFC0024A430 /* ichicans.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ichicans.c; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichicans.c"; sourceTree = SOURCE_ROOT; };
+		B8D7B0A01D2E6AFC0024A430 /* ichicant.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ichicant.h; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichicant.h"; sourceTree = SOURCE_ROOT; };
+		B8D7B0A11D2E6AFC0024A430 /* ichicomn.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ichicomn.h; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichicomn.h"; sourceTree = SOURCE_ROOT; };
+		B8D7B0A21D2E6AFC0024A430 /* ichicomp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ichicomp.h; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichicomp.h"; sourceTree = SOURCE_ROOT; };
+		B8D7B0A31D2E6AFC0024A430 /* ichidrp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ichidrp.h; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichidrp.h"; sourceTree = SOURCE_ROOT; };
+		B8D7B0A41D2E6AFC0024A430 /* ichierr.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ichierr.h; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichierr.h"; sourceTree = SOURCE_ROOT; };
+		B8D7B0A51D2E6AFC0024A430 /* ichiisot.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ichiisot.c; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichiisot.c"; sourceTree = SOURCE_ROOT; };
+		B8D7B0A61D2E6AFC0024A430 /* ichilnct.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ichilnct.c; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichilnct.c"; sourceTree = SOURCE_ROOT; };
+		B8D7B0A71D2E6AFC0024A430 /* ichimain.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ichimain.h; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichimain.h"; sourceTree = SOURCE_ROOT; };
+		B8D7B0A81D2E6AFC0024A430 /* ichimak2.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ichimak2.c; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichimak2.c"; sourceTree = SOURCE_ROOT; };
+		B8D7B0A91D2E6AFC0024A430 /* ichimake.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ichimake.c; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichimake.c"; sourceTree = SOURCE_ROOT; };
+		B8D7B0AA1D2E6AFC0024A430 /* ichimake.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ichimake.h; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichimake.h"; sourceTree = SOURCE_ROOT; };
+		B8D7B0AB1D2E6AFC0024A430 /* ichimap1.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ichimap1.c; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichimap1.c"; sourceTree = SOURCE_ROOT; };
+		B8D7B0AC1D2E6AFC0024A430 /* ichimap2.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ichimap2.c; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichimap2.c"; sourceTree = SOURCE_ROOT; };
+		B8D7B0AD1D2E6AFC0024A430 /* ichimap4.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ichimap4.c; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichimap4.c"; sourceTree = SOURCE_ROOT; };
+		B8D7B0AE1D2E6AFC0024A430 /* ichinorm.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ichinorm.c; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichinorm.c"; sourceTree = SOURCE_ROOT; };
+		B8D7B0AF1D2E6AFC0024A430 /* ichinorm.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ichinorm.h; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichinorm.h"; sourceTree = SOURCE_ROOT; };
+		B8D7B0B01D2E6AFC0024A430 /* ichiparm.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ichiparm.c; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichiparm.c"; sourceTree = SOURCE_ROOT; };
+		B8D7B0B11D2E6AFC0024A430 /* ichiparm.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ichiparm.h; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichiparm.h"; sourceTree = SOURCE_ROOT; };
+		B8D7B0B21D2E6AFC0024A430 /* ichiprt1.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ichiprt1.c; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichiprt1.c"; sourceTree = SOURCE_ROOT; };
+		B8D7B0B31D2E6AFC0024A430 /* ichiprt2.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ichiprt2.c; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichiprt2.c"; sourceTree = SOURCE_ROOT; };
+		B8D7B0B41D2E6AFC0024A430 /* ichiprt3.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ichiprt3.c; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichiprt3.c"; sourceTree = SOURCE_ROOT; };
+		B8D7B0B51D2E6AFC0024A430 /* ichiqueu.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ichiqueu.c; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichiqueu.c"; sourceTree = SOURCE_ROOT; };
+		B8D7B0B61D2E6AFC0024A430 /* ichiread.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ichiread.c; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichiread.c"; sourceTree = SOURCE_ROOT; };
+		B8D7B0B71D2E6AFC0024A430 /* ichiring.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ichiring.c; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichiring.c"; sourceTree = SOURCE_ROOT; };
+		B8D7B0B81D2E6AFC0024A430 /* ichiring.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ichiring.h; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichiring.h"; sourceTree = SOURCE_ROOT; };
+		B8D7B0B91D2E6AFC0024A430 /* ichirvr1.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ichirvr1.c; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichirvr1.c"; sourceTree = SOURCE_ROOT; };
+		B8D7B0BA1D2E6AFC0024A430 /* ichirvr2.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ichirvr2.c; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichirvr2.c"; sourceTree = SOURCE_ROOT; };
+		B8D7B0BB1D2E6AFC0024A430 /* ichirvr3.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ichirvr3.c; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichirvr3.c"; sourceTree = SOURCE_ROOT; };
+		B8D7B0BC1D2E6AFC0024A430 /* ichirvr4.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ichirvr4.c; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichirvr4.c"; sourceTree = SOURCE_ROOT; };
+		B8D7B0BD1D2E6AFC0024A430 /* ichirvr5.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ichirvr5.c; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichirvr5.c"; sourceTree = SOURCE_ROOT; };
+		B8D7B0BE1D2E6AFC0024A430 /* ichirvr6.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ichirvr6.c; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichirvr6.c"; sourceTree = SOURCE_ROOT; };
+		B8D7B0BF1D2E6AFC0024A430 /* ichirvr7.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ichirvr7.c; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichirvr7.c"; sourceTree = SOURCE_ROOT; };
+		B8D7B0C01D2E6AFC0024A430 /* ichirvrs.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ichirvrs.h; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichirvrs.h"; sourceTree = SOURCE_ROOT; };
+		B8D7B0C11D2E6AFC0024A430 /* ichisize.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ichisize.h; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichisize.h"; sourceTree = SOURCE_ROOT; };
+		B8D7B0C21D2E6AFC0024A430 /* ichisort.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ichisort.c; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichisort.c"; sourceTree = SOURCE_ROOT; };
+		B8D7B0C31D2E6AFC0024A430 /* ichister.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ichister.c; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichister.c"; sourceTree = SOURCE_ROOT; };
+		B8D7B0C41D2E6AFC0024A430 /* ichister.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ichister.h; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichister.h"; sourceTree = SOURCE_ROOT; };
+		B8D7B0C51D2E6AFC0024A430 /* ichitaut.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ichitaut.c; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichitaut.c"; sourceTree = SOURCE_ROOT; };
+		B8D7B0C61D2E6AFC0024A430 /* ichitaut.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ichitaut.h; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichitaut.h"; sourceTree = SOURCE_ROOT; };
+		B8D7B0C71D2E6AFC0024A430 /* ichitime.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ichitime.h; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ichitime.h"; sourceTree = SOURCE_ROOT; };
+		B8D7B0C81D2E6AFC0024A430 /* ikey_base26.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ikey_base26.c; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ikey_base26.c"; sourceTree = SOURCE_ROOT; };
+		B8D7B0C91D2E6AFC0024A430 /* ikey_base26.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ikey_base26.h; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ikey_base26.h"; sourceTree = SOURCE_ROOT; };
+		B8D7B0CA1D2E6AFC0024A430 /* ikey_dll.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ikey_dll.c; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/ikey_dll.c"; sourceTree = SOURCE_ROOT; };
+		B8D7B0CB1D2E6AFC0024A430 /* inchi_api.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = inchi_api.h; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/inchi_api.h"; sourceTree = SOURCE_ROOT; };
+		B8D7B0CC1D2E6AFC0024A430 /* inchi_dll_a.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = inchi_dll_a.c; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/inchi_dll_a.c"; sourceTree = SOURCE_ROOT; };
+		B8D7B0CD1D2E6AFC0024A430 /* inchi_dll_a.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = inchi_dll_a.h; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/inchi_dll_a.h"; sourceTree = SOURCE_ROOT; };
+		B8D7B0CE1D2E6AFC0024A430 /* inchi_dll_a2.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = inchi_dll_a2.c; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/inchi_dll_a2.c"; sourceTree = SOURCE_ROOT; };
+		B8D7B0CF1D2E6AFC0024A430 /* inchi_dll_main.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = inchi_dll_main.c; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/inchi_dll_main.c"; sourceTree = SOURCE_ROOT; };
+		B8D7B0D01D2E6AFC0024A430 /* inchi_dll_main.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = inchi_dll_main.h; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/inchi_dll_main.h"; sourceTree = SOURCE_ROOT; };
+		B8D7B0D11D2E6AFC0024A430 /* inchi_dll.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = inchi_dll.c; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/inchi_dll.c"; sourceTree = SOURCE_ROOT; };
+		B8D7B0D21D2E6AFC0024A430 /* inchicmp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = inchicmp.h; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/inchicmp.h"; sourceTree = SOURCE_ROOT; };
+		B8D7B0D31D2E6AFC0024A430 /* incomdef.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = incomdef.h; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/incomdef.h"; sourceTree = SOURCE_ROOT; };
+		B8D7B0D41D2E6AFC0024A430 /* inpdef.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = inpdef.h; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/inpdef.h"; sourceTree = SOURCE_ROOT; };
+		B8D7B0D51D2E6AFC0024A430 /* lreadmol.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = lreadmol.h; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/lreadmol.h"; sourceTree = SOURCE_ROOT; };
+		B8D7B0D61D2E6AFC0024A430 /* mode.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = mode.h; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/mode.h"; sourceTree = SOURCE_ROOT; };
+		B8D7B0D71D2E6AFC0024A430 /* runichi.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = runichi.c; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/runichi.c"; sourceTree = SOURCE_ROOT; };
+		B8D7B0D81D2E6AFC0024A430 /* sha2.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = sha2.c; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/sha2.c"; sourceTree = SOURCE_ROOT; };
+		B8D7B0D91D2E6AFC0024A430 /* sha2.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = sha2.h; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/sha2.h"; sourceTree = SOURCE_ROOT; };
+		B8D7B0DA1D2E6AFC0024A430 /* strutil.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = strutil.c; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/strutil.c"; sourceTree = SOURCE_ROOT; };
+		B8D7B0DB1D2E6AFC0024A430 /* strutil.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = strutil.h; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/strutil.h"; sourceTree = SOURCE_ROOT; };
+		B8D7B0DC1D2E6AFC0024A430 /* util.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = util.c; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/util.c"; sourceTree = SOURCE_ROOT; };
+		B8D7B0DD1D2E6AFC0024A430 /* util.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = util.h; path = "../../../INCHI-1-API/INCHI_API/inchi_dll/util.h"; sourceTree = SOURCE_ROOT; };
+		B8D7B1251D2E6B7D0024A430 /* inchi_api_intf.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = inchi_api_intf.cpp; path = ../../lib/inchi_api_intf.cpp; sourceTree = SOURCE_ROOT; };
+		B8D7B1261D2E6B7D0024A430 /* inchi_api_intf.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = inchi_api_intf.h; path = ../../lib/inchi_api_intf.h; sourceTree = SOURCE_ROOT; };
+		B8D7B1271D2E6B7D0024A430 /* inchi_generator.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = inchi_generator.cpp; path = ../../lib/inchi_generator.cpp; sourceTree = SOURCE_ROOT; };
+		B8D7B1281D2E6B7D0024A430 /* inchi_generator.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = inchi_generator.h; path = ../../lib/inchi_generator.h; sourceTree = SOURCE_ROOT; };
+		B8D7B1291D2E6B7D0024A430 /* rinchi_hashing.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = rinchi_hashing.cpp; path = ../../lib/rinchi_hashing.cpp; sourceTree = SOURCE_ROOT; };
+		B8D7B12A1D2E6B7D0024A430 /* rinchi_hashing.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = rinchi_hashing.h; path = ../../lib/rinchi_hashing.h; sourceTree = SOURCE_ROOT; };
+		B8D7B12B1D2E6B7D0024A430 /* rinchi_logger.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = rinchi_logger.cpp; path = ../../lib/rinchi_logger.cpp; sourceTree = SOURCE_ROOT; };
+		B8D7B12C1D2E6B7D0024A430 /* rinchi_logger.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = rinchi_logger.h; path = ../../lib/rinchi_logger.h; sourceTree = SOURCE_ROOT; };
+		B8D7B12D1D2E6B7D0024A430 /* rinchi_platform.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = rinchi_platform.h; path = ../../lib/rinchi_platform.h; sourceTree = SOURCE_ROOT; };
+		B8D7B12E1D2E6B7D0024A430 /* rinchi_utils.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = rinchi_utils.cpp; path = ../../lib/rinchi_utils.cpp; sourceTree = SOURCE_ROOT; };
+		B8D7B12F1D2E6B7D0024A430 /* rinchi_utils.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = rinchi_utils.h; path = ../../lib/rinchi_utils.h; sourceTree = SOURCE_ROOT; };
+		B8D7B13B1D2E6BFD0024A430 /* mdl_molfile_reader.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = mdl_molfile_reader.cpp; path = ../../parsers/mdl_molfile_reader.cpp; sourceTree = SOURCE_ROOT; };
+		B8D7B13C1D2E6BFD0024A430 /* mdl_molfile_reader.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = mdl_molfile_reader.h; path = ../../parsers/mdl_molfile_reader.h; sourceTree = SOURCE_ROOT; };
+		B8D7B13D1D2E6BFD0024A430 /* mdl_molfile.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = mdl_molfile.cpp; path = ../../parsers/mdl_molfile.cpp; sourceTree = SOURCE_ROOT; };
+		B8D7B13E1D2E6BFD0024A430 /* mdl_molfile.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = mdl_molfile.h; path = ../../parsers/mdl_molfile.h; sourceTree = SOURCE_ROOT; };
+		B8D7B13F1D2E6BFD0024A430 /* mdl_rdfile_reader.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = mdl_rdfile_reader.cpp; path = ../../parsers/mdl_rdfile_reader.cpp; sourceTree = SOURCE_ROOT; };
+		B8D7B1401D2E6BFD0024A430 /* mdl_rdfile_reader.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = mdl_rdfile_reader.h; path = ../../parsers/mdl_rdfile_reader.h; sourceTree = SOURCE_ROOT; };
+		B8D7B1411D2E6BFD0024A430 /* mdl_rdfile.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = mdl_rdfile.h; path = ../../parsers/mdl_rdfile.h; sourceTree = SOURCE_ROOT; };
+		B8D7B1421D2E6BFD0024A430 /* mdl_rxnfile_reader.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = mdl_rxnfile_reader.cpp; path = ../../parsers/mdl_rxnfile_reader.cpp; sourceTree = SOURCE_ROOT; };
+		B8D7B1431D2E6BFD0024A430 /* mdl_rxnfile_reader.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = mdl_rxnfile_reader.h; path = ../../parsers/mdl_rxnfile_reader.h; sourceTree = SOURCE_ROOT; };
+		B8D7B1441D2E6BFD0024A430 /* mdl_rxnfile.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = mdl_rxnfile.h; path = ../../parsers/mdl_rxnfile.h; sourceTree = SOURCE_ROOT; };
+		B8D7B1451D2E6BFD0024A430 /* rinchi_reader.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = rinchi_reader.cpp; path = ../../parsers/rinchi_reader.cpp; sourceTree = SOURCE_ROOT; };
+		B8D7B1461D2E6BFD0024A430 /* rinchi_reader.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = rinchi_reader.h; path = ../../parsers/rinchi_reader.h; sourceTree = SOURCE_ROOT; };
+		B8D7B1531D2E6C310024A430 /* rinchi_consts.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = rinchi_consts.cpp; path = ../../rinchi/rinchi_consts.cpp; sourceTree = SOURCE_ROOT; };
+		B8D7B1541D2E6C310024A430 /* rinchi_consts.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = rinchi_consts.h; path = ../../rinchi/rinchi_consts.h; sourceTree = SOURCE_ROOT; };
+		B8D7B1551D2E6C310024A430 /* rinchi_reaction.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = rinchi_reaction.cpp; path = ../../rinchi/rinchi_reaction.cpp; sourceTree = SOURCE_ROOT; };
+		B8D7B1561D2E6C310024A430 /* rinchi_reaction.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = rinchi_reaction.h; path = ../../rinchi/rinchi_reaction.h; sourceTree = SOURCE_ROOT; };
+		B8D7B15B1D2E6C650024A430 /* mdl_rdfile_writer.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = mdl_rdfile_writer.cpp; path = ../../writers/mdl_rdfile_writer.cpp; sourceTree = SOURCE_ROOT; };
+		B8D7B15C1D2E6C650024A430 /* mdl_rdfile_writer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = mdl_rdfile_writer.h; path = ../../writers/mdl_rdfile_writer.h; sourceTree = SOURCE_ROOT; };
+		B8D7B15D1D2E6C650024A430 /* mdl_rxnfile_writer.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = mdl_rxnfile_writer.cpp; path = ../../writers/mdl_rxnfile_writer.cpp; sourceTree = SOURCE_ROOT; };
+		B8D7B15E1D2E6C650024A430 /* mdl_rxnfile_writer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = mdl_rxnfile_writer.h; path = ../../writers/mdl_rxnfile_writer.h; sourceTree = SOURCE_ROOT; };
+		C6859E8B029090EE04C91782 /* rinchi_cmdline_pm.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = rinchi_cmdline_pm.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DD76F660486A84900D96B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* rinchi_cmdline_pm */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7795FE84155DC02AAC07 /* Source */,
+				C6859E8C029090F304C91782 /* Documentation */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = rinchi_cmdline_pm;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B8D7B15B1D2E6C650024A430 /* mdl_rdfile_writer.cpp */,
+				B8D7B15C1D2E6C650024A430 /* mdl_rdfile_writer.h */,
+				B8D7B15D1D2E6C650024A430 /* mdl_rxnfile_writer.cpp */,
+				B8D7B15E1D2E6C650024A430 /* mdl_rxnfile_writer.h */,
+				B8D7B1531D2E6C310024A430 /* rinchi_consts.cpp */,
+				B8D7B1541D2E6C310024A430 /* rinchi_consts.h */,
+				B8D7B1551D2E6C310024A430 /* rinchi_reaction.cpp */,
+				B8D7B1561D2E6C310024A430 /* rinchi_reaction.h */,
+				B8D7B13B1D2E6BFD0024A430 /* mdl_molfile_reader.cpp */,
+				B8D7B13C1D2E6BFD0024A430 /* mdl_molfile_reader.h */,
+				B8D7B13D1D2E6BFD0024A430 /* mdl_molfile.cpp */,
+				B8D7B13E1D2E6BFD0024A430 /* mdl_molfile.h */,
+				B8D7B13F1D2E6BFD0024A430 /* mdl_rdfile_reader.cpp */,
+				B8D7B1401D2E6BFD0024A430 /* mdl_rdfile_reader.h */,
+				B8D7B1411D2E6BFD0024A430 /* mdl_rdfile.h */,
+				B8D7B1421D2E6BFD0024A430 /* mdl_rxnfile_reader.cpp */,
+				B8D7B1431D2E6BFD0024A430 /* mdl_rxnfile_reader.h */,
+				B8D7B1441D2E6BFD0024A430 /* mdl_rxnfile.h */,
+				B8D7B1451D2E6BFD0024A430 /* rinchi_reader.cpp */,
+				B8D7B1461D2E6BFD0024A430 /* rinchi_reader.h */,
+				B8D7B1251D2E6B7D0024A430 /* inchi_api_intf.cpp */,
+				B8D7B1261D2E6B7D0024A430 /* inchi_api_intf.h */,
+				B8D7B1271D2E6B7D0024A430 /* inchi_generator.cpp */,
+				B8D7B1281D2E6B7D0024A430 /* inchi_generator.h */,
+				B8D7B1291D2E6B7D0024A430 /* rinchi_hashing.cpp */,
+				B8D7B12A1D2E6B7D0024A430 /* rinchi_hashing.h */,
+				B8D7B12B1D2E6B7D0024A430 /* rinchi_logger.cpp */,
+				B8D7B12C1D2E6B7D0024A430 /* rinchi_logger.h */,
+				B8D7B12D1D2E6B7D0024A430 /* rinchi_platform.h */,
+				B8D7B12E1D2E6B7D0024A430 /* rinchi_utils.cpp */,
+				B8D7B12F1D2E6B7D0024A430 /* rinchi_utils.h */,
+				B8D7B0971D2E6AFC0024A430 /* ichi_bns.c */,
+				B8D7B0981D2E6AFC0024A430 /* ichi_bns.h */,
+				B8D7B0991D2E6AFC0024A430 /* ichi_io.c */,
+				B8D7B09A1D2E6AFC0024A430 /* ichi_io.h */,
+				B8D7B09B1D2E6AFC0024A430 /* ichi.h */,
+				B8D7B09C1D2E6AFC0024A430 /* ichican2.c */,
+				B8D7B09D1D2E6AFC0024A430 /* ichicano.c */,
+				B8D7B09E1D2E6AFC0024A430 /* ichicano.h */,
+				B8D7B09F1D2E6AFC0024A430 /* ichicans.c */,
+				B8D7B0A01D2E6AFC0024A430 /* ichicant.h */,
+				B8D7B0A11D2E6AFC0024A430 /* ichicomn.h */,
+				B8D7B0A21D2E6AFC0024A430 /* ichicomp.h */,
+				B8D7B0A31D2E6AFC0024A430 /* ichidrp.h */,
+				B8D7B0A41D2E6AFC0024A430 /* ichierr.h */,
+				B8D7B0A51D2E6AFC0024A430 /* ichiisot.c */,
+				B8D7B0A61D2E6AFC0024A430 /* ichilnct.c */,
+				B8D7B0A71D2E6AFC0024A430 /* ichimain.h */,
+				B8D7B0A81D2E6AFC0024A430 /* ichimak2.c */,
+				B8D7B0A91D2E6AFC0024A430 /* ichimake.c */,
+				B8D7B0AA1D2E6AFC0024A430 /* ichimake.h */,
+				B8D7B0AB1D2E6AFC0024A430 /* ichimap1.c */,
+				B8D7B0AC1D2E6AFC0024A430 /* ichimap2.c */,
+				B8D7B0AD1D2E6AFC0024A430 /* ichimap4.c */,
+				B8D7B0AE1D2E6AFC0024A430 /* ichinorm.c */,
+				B8D7B0AF1D2E6AFC0024A430 /* ichinorm.h */,
+				B8D7B0B01D2E6AFC0024A430 /* ichiparm.c */,
+				B8D7B0B11D2E6AFC0024A430 /* ichiparm.h */,
+				B8D7B0B21D2E6AFC0024A430 /* ichiprt1.c */,
+				B8D7B0B31D2E6AFC0024A430 /* ichiprt2.c */,
+				B8D7B0B41D2E6AFC0024A430 /* ichiprt3.c */,
+				B8D7B0B51D2E6AFC0024A430 /* ichiqueu.c */,
+				B8D7B0B61D2E6AFC0024A430 /* ichiread.c */,
+				B8D7B0B71D2E6AFC0024A430 /* ichiring.c */,
+				B8D7B0B81D2E6AFC0024A430 /* ichiring.h */,
+				B8D7B0B91D2E6AFC0024A430 /* ichirvr1.c */,
+				B8D7B0BA1D2E6AFC0024A430 /* ichirvr2.c */,
+				B8D7B0BB1D2E6AFC0024A430 /* ichirvr3.c */,
+				B8D7B0BC1D2E6AFC0024A430 /* ichirvr4.c */,
+				B8D7B0BD1D2E6AFC0024A430 /* ichirvr5.c */,
+				B8D7B0BE1D2E6AFC0024A430 /* ichirvr6.c */,
+				B8D7B0BF1D2E6AFC0024A430 /* ichirvr7.c */,
+				B8D7B0C01D2E6AFC0024A430 /* ichirvrs.h */,
+				B8D7B0C11D2E6AFC0024A430 /* ichisize.h */,
+				B8D7B0C21D2E6AFC0024A430 /* ichisort.c */,
+				B8D7B0C31D2E6AFC0024A430 /* ichister.c */,
+				B8D7B0C41D2E6AFC0024A430 /* ichister.h */,
+				B8D7B0C51D2E6AFC0024A430 /* ichitaut.c */,
+				B8D7B0C61D2E6AFC0024A430 /* ichitaut.h */,
+				B8D7B0C71D2E6AFC0024A430 /* ichitime.h */,
+				B8D7B0C81D2E6AFC0024A430 /* ikey_base26.c */,
+				B8D7B0C91D2E6AFC0024A430 /* ikey_base26.h */,
+				B8D7B0CA1D2E6AFC0024A430 /* ikey_dll.c */,
+				B8D7B0CB1D2E6AFC0024A430 /* inchi_api.h */,
+				B8D7B0CC1D2E6AFC0024A430 /* inchi_dll_a.c */,
+				B8D7B0CD1D2E6AFC0024A430 /* inchi_dll_a.h */,
+				B8D7B0CE1D2E6AFC0024A430 /* inchi_dll_a2.c */,
+				B8D7B0CF1D2E6AFC0024A430 /* inchi_dll_main.c */,
+				B8D7B0D01D2E6AFC0024A430 /* inchi_dll_main.h */,
+				B8D7B0D11D2E6AFC0024A430 /* inchi_dll.c */,
+				B8D7B0D21D2E6AFC0024A430 /* inchicmp.h */,
+				B8D7B0D31D2E6AFC0024A430 /* incomdef.h */,
+				B8D7B0D41D2E6AFC0024A430 /* inpdef.h */,
+				B8D7B0D51D2E6AFC0024A430 /* lreadmol.h */,
+				B8D7B0D61D2E6AFC0024A430 /* mode.h */,
+				B8D7B0D71D2E6AFC0024A430 /* runichi.c */,
+				B8D7B0D81D2E6AFC0024A430 /* sha2.c */,
+				B8D7B0D91D2E6AFC0024A430 /* sha2.h */,
+				B8D7B0DA1D2E6AFC0024A430 /* strutil.c */,
+				B8D7B0DB1D2E6AFC0024A430 /* strutil.h */,
+				B8D7B0DC1D2E6AFC0024A430 /* util.c */,
+				B8D7B0DD1D2E6AFC0024A430 /* util.h */,
+				08FB7796FE84155DC02AAC07 /* rinchi_cmdline.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DD76F6C0486A84900D96B5E /* rinchi_cmdline_pm */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6859E8C029090F304C91782 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				C6859E8B029090EE04C91782 /* rinchi_cmdline_pm.1 */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DD76F620486A84900D96B5E /* rinchi_cmdline */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB923108733DC60010E9CD /* Build configuration list for PBXNativeTarget "rinchi_cmdline" */;
+			buildPhases = (
+				8DD76F640486A84900D96B5E /* Sources */,
+				8DD76F660486A84900D96B5E /* Frameworks */,
+				8DD76F690486A84900D96B5E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = rinchi_cmdline;
+			productInstallPath = "$(HOME)/bin";
+			productName = rinchi_cmdline_pm;
+			productReference = 8DD76F6C0486A84900D96B5E /* rinchi_cmdline_pm */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "rinchi_cmdline_pm" */;
+			hasScannedForEncodings = 1;
+			mainGroup = 08FB7794FE84155DC02AAC07 /* rinchi_cmdline_pm */;
+			projectDirPath = "";
+			targets = (
+				8DD76F620486A84900D96B5E /* rinchi_cmdline */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DD76F640486A84900D96B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DD76F650486A84900D96B5E /* rinchi_cmdline.cpp in Sources */,
+				B8D7B0DE1D2E6AFC0024A430 /* ichi_bns.c in Sources */,
+				B8D7B0E01D2E6AFC0024A430 /* ichi_io.c in Sources */,
+				B8D7B0E31D2E6AFC0024A430 /* ichican2.c in Sources */,
+				B8D7B0E41D2E6AFC0024A430 /* ichicano.c in Sources */,
+				B8D7B0E61D2E6AFC0024A430 /* ichicans.c in Sources */,
+				B8D7B0EC1D2E6AFC0024A430 /* ichiisot.c in Sources */,
+				B8D7B0ED1D2E6AFC0024A430 /* ichilnct.c in Sources */,
+				B8D7B0EF1D2E6AFC0024A430 /* ichimak2.c in Sources */,
+				B8D7B0F01D2E6AFC0024A430 /* ichimake.c in Sources */,
+				B8D7B0F21D2E6AFC0024A430 /* ichimap1.c in Sources */,
+				B8D7B0F31D2E6AFC0024A430 /* ichimap2.c in Sources */,
+				B8D7B0F41D2E6AFC0024A430 /* ichimap4.c in Sources */,
+				B8D7B0F51D2E6AFC0024A430 /* ichinorm.c in Sources */,
+				B8D7B0F71D2E6AFC0024A430 /* ichiparm.c in Sources */,
+				B8D7B0F91D2E6AFC0024A430 /* ichiprt1.c in Sources */,
+				B8D7B0FA1D2E6AFC0024A430 /* ichiprt2.c in Sources */,
+				B8D7B0FB1D2E6AFC0024A430 /* ichiprt3.c in Sources */,
+				B8D7B0FC1D2E6AFC0024A430 /* ichiqueu.c in Sources */,
+				B8D7B0FD1D2E6AFC0024A430 /* ichiread.c in Sources */,
+				B8D7B0FE1D2E6AFC0024A430 /* ichiring.c in Sources */,
+				B8D7B1001D2E6AFC0024A430 /* ichirvr1.c in Sources */,
+				B8D7B1011D2E6AFC0024A430 /* ichirvr2.c in Sources */,
+				B8D7B1021D2E6AFC0024A430 /* ichirvr3.c in Sources */,
+				B8D7B1031D2E6AFC0024A430 /* ichirvr4.c in Sources */,
+				B8D7B1041D2E6AFC0024A430 /* ichirvr5.c in Sources */,
+				B8D7B1051D2E6AFC0024A430 /* ichirvr6.c in Sources */,
+				B8D7B1061D2E6AFC0024A430 /* ichirvr7.c in Sources */,
+				B8D7B1091D2E6AFC0024A430 /* ichisort.c in Sources */,
+				B8D7B10A1D2E6AFC0024A430 /* ichister.c in Sources */,
+				B8D7B10C1D2E6AFC0024A430 /* ichitaut.c in Sources */,
+				B8D7B10F1D2E6AFC0024A430 /* ikey_base26.c in Sources */,
+				B8D7B1111D2E6AFC0024A430 /* ikey_dll.c in Sources */,
+				B8D7B1131D2E6AFC0024A430 /* inchi_dll_a.c in Sources */,
+				B8D7B1151D2E6AFC0024A430 /* inchi_dll_a2.c in Sources */,
+				B8D7B1161D2E6AFC0024A430 /* inchi_dll_main.c in Sources */,
+				B8D7B1181D2E6AFC0024A430 /* inchi_dll.c in Sources */,
+				B8D7B11E1D2E6AFC0024A430 /* runichi.c in Sources */,
+				B8D7B11F1D2E6AFC0024A430 /* sha2.c in Sources */,
+				B8D7B1211D2E6AFC0024A430 /* strutil.c in Sources */,
+				B8D7B1231D2E6AFC0024A430 /* util.c in Sources */,
+				B8D7B1301D2E6B7D0024A430 /* inchi_api_intf.cpp in Sources */,
+				B8D7B1321D2E6B7D0024A430 /* inchi_generator.cpp in Sources */,
+				B8D7B1341D2E6B7D0024A430 /* rinchi_hashing.cpp in Sources */,
+				B8D7B1361D2E6B7D0024A430 /* rinchi_logger.cpp in Sources */,
+				B8D7B1391D2E6B7D0024A430 /* rinchi_utils.cpp in Sources */,
+				B8D7B1471D2E6BFD0024A430 /* mdl_molfile_reader.cpp in Sources */,
+				B8D7B1491D2E6BFD0024A430 /* mdl_molfile.cpp in Sources */,
+				B8D7B14B1D2E6BFD0024A430 /* mdl_rdfile_reader.cpp in Sources */,
+				B8D7B14E1D2E6BFD0024A430 /* mdl_rxnfile_reader.cpp in Sources */,
+				B8D7B1511D2E6BFD0024A430 /* rinchi_reader.cpp in Sources */,
+				B8D7B1571D2E6C310024A430 /* rinchi_consts.cpp in Sources */,
+				B8D7B1591D2E6C310024A430 /* rinchi_reaction.cpp in Sources */,
+				B8D7B15F1D2E6C650024A430 /* mdl_rdfile_writer.cpp in Sources */,
+				B8D7B1611D2E6C650024A430 /* mdl_rxnfile_writer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB923208733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = "$(HOME)/bin";
+				PRODUCT_NAME = rinchi_cmdline_pm;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		1DEB923308733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = "$(HOME)/bin";
+				PRODUCT_NAME = rinchi_cmdline_pm;
+			};
+			name = Release;
+		};
+		1DEB923608733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Debug;
+		};
+		1DEB923708733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB923108733DC60010E9CD /* Build configuration list for PBXNativeTarget "rinchi_cmdline" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923208733DC60010E9CD /* Debug */,
+				1DEB923308733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "rinchi_cmdline_pm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923608733DC60010E9CD /* Debug */,
+				1DEB923708733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

@@ -1,0 +1,6 @@
+Since this DLL/shared library is meant to be loaded from Python there should be
+no need to build "Debug" builds. Make sure that the bitness of the DLL/shared
+library that you produce matches the bitness of your Python version.
+
+To run the "test.py" example file, adjust the path to the DLL/shared library
+in the first line where the RInChI lib is instantiated.

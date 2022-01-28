@@ -1,0 +1,13 @@
+; rinchi_lib.def : Declares the module parameters for the DLL.
+
+LIBRARY
+
+EXPORTS
+	rinchilib_latest_err_msg
+
+	rinchilib_rinchi_from_file_text
+	rinchilib_rinchikey_from_file_text
+
+	rinchilib_file_text_from_rinchi
+	rinchilib_inchis_from_rinchi
+	rinchilib_rinchikey_from_rinchi
