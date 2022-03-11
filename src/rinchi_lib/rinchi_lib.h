@@ -47,7 +47,13 @@ extern const char* RINCHI_INPUT_FORMAT_RDFILE;
 extern const char* RINCHI_INPUT_FORMAT_RXNFILE;
 extern const char* RINCHI_INPUT_FORMAT_AUTO;
 
+#ifdef __cplusplus
 extern "C" {
+#else
+#include <stdbool.h>
+#endif
+
+
 
 /**
  * @brief rinchilib_latest_err_msg() returns the latest error message produced.
@@ -115,6 +121,8 @@ int rinchilib_rinchikey_from_rinchi(
 	const char* rinchi_string, const char* key_type, const char** out_rinchi_key
 );
 
+#ifdef __cplusplus
 } // end of extern "C"
+#endif
 
 #endif
