@@ -5,6 +5,7 @@
 #-------------------------------------------------
 
 CONFIG   -= qt
+CONFIG   += no_autoqmake
 DEFINES  -= QT_WEBKIT
 # DEFINES  += LIB_RINCHI_DEBUG
 
@@ -80,3 +81,8 @@ SOURCES += \
 	./../../INCHI-1-API/INCHI_API/inchi_dll/sha2.c \
 	./../../INCHI-1-API/INCHI_API/inchi_dll/strutil.c \
 	./../../INCHI-1-API/INCHI_API/inchi_dll/util.c \
+	
+# Ensure that only explicitly exported functions are present in symbol table.
+QMAKE_CXXFLAGS += -fvisibility=hidden
+QMAKE_CFLAGS += -fvisibility=hidden
+
