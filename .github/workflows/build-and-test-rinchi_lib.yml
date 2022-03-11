@@ -20,6 +20,10 @@ jobs:
     - name: rinchi_lib build.
       run: cd src/rinchi_lib/ ; make -f Makefile-64bit
       
+    - name: rinchi_lib check symbol visibility.
+      # "! nm -D ..." tests that "INCHIGEN_Create" should NOT be present as symbol in .so file.
+      run: cd src/rinchi_lib/ ; ! nm -D librinchi.so | grep INCHIGEN_Create
+    
     - name: rinchi_lib test - python2.
       run: cd src/rinchi_lib/ ; python2 test.py > /tmp/py2-rinchi-lib-test-out.txt ; diff /tmp/py2-rinchi-lib-test-out.txt test.py.expected_output.txt
 
