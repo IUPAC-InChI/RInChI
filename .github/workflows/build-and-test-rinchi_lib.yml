@@ -1,4 +1,4 @@
-name: Build rinchi_lib only.
+name: Build and test rinchi_lib library.
 
 on:
   push:
