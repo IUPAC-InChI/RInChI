@@ -78,9 +78,9 @@
 	#define API_EXPORT
 #endif
 
-extern const char* RINCHI_INPUT_FORMAT_RDFILE = "RD";
-extern const char* RINCHI_INPUT_FORMAT_RXNFILE = "RXN";
-extern const char* RINCHI_INPUT_FORMAT_AUTO = "AUTO";
+const char* RINCHI_INPUT_FORMAT_RDFILE = "RD";
+const char* RINCHI_INPUT_FORMAT_RXNFILE = "RXN";
+const char* RINCHI_INPUT_FORMAT_AUTO = "AUTO";
 
 // Holds latest error message in case a C++ exception is thrown in an exported function.
 std::string cpp_error_message;
