@@ -53,7 +53,7 @@ class MdlRxnfileWriter {
 	public:
 		MdlRxnfileWriter() {}
 
-		void write_reaction(const Reaction& reaction, std::ostream& output_stream);
+		void write_reaction(const Reaction& reaction, std::ostream& output_stream, bool do_write_agents = true);
 };
 
 } // end of namespace

@@ -67,9 +67,13 @@ void MdlRxnfileReader::read_reaction_from_stream(std::istream& input_stream, Rea
 
 		// Read component count line.
 		get_next_line(input_stream);
-		check(m_current_line.length() == 6, "Invalid component count line - must be 6 characters long.");
+        trim_right(m_current_line, " ");
+		check((m_current_line.length() == 6) || (m_current_line.length() == 9), "Invalid component count line - must be 6 or 9 characters long.");
 		int reactant_count = str2int(m_current_line.substr(0, 3));
 		int product_count  = str2int(m_current_line.substr(3, 3));
+        int agent_count = -1;
+        if (m_current_line.length() == 9)
+            agent_count = str2int(m_current_line.substr(6, 3));
 
 		MdlMolfileReader mr;
 
@@ -87,6 +91,15 @@ void MdlRxnfileReader::read_reaction_from_stream(std::istream& input_stream, Rea
 			if (m_current_line != MDL_TAG_RXN_COMPONENT_START)
 				throw MdlRxnfileReaderError("Reaction components must be delimited by a '" + MDL_TAG_RXN_COMPONENT_START + "' line.");
 			ReactionComponent* rc = result.add_product();
+			mr.read_molecule(input_stream, *rc);
+			m_line_number += mr.lines_read();
+		}
+
+        for (int i = 0; i < agent_count; i++) {
+			get_next_line(input_stream);
+			if (m_current_line != MDL_TAG_RXN_COMPONENT_START)
+				throw MdlRxnfileReaderError("Reaction components must be delimited by a '" + MDL_TAG_RXN_COMPONENT_START + "' line.");
+			ReactionComponent* rc = result.add_agent();
 			mr.read_molecule(input_stream, *rc);
 			m_line_number += mr.lines_read();
 		}
