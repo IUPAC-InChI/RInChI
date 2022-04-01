@@ -234,4 +234,48 @@ void RxnfileTests::chiral_flag_preservation()
 	}
 }
 
+void RxnfileTests::agent_support_in_writer()
+{
+    rinchi::Reaction rxn;
+    rinchi::MdlRxnfileReader rxn_reader;
+    rxn_reader.read_reaction("R005a_with_agents.rxn", rxn);
+
+    std::string rinchi_string = rxn.rinchi_string();
+    rinchi::unit_test::check_is_equal(rinchi_string,
+        "RInChI=1.00.1S/C4H8O/c1-3-4(2)5-3/h3-4H,1-2H3/t3-,4-/m0/s1<>"
+        "C4H9BrO/c1-3(5)4(2)6/h3-4,6H,1-2H3/t3-,4+/m1/s1!Na.H2O/h;1H2/q+1;/p-1<>"
+        "ClH.Na/h1H;/q;+1/p-1!ClH/h1H!H2O/h1H2/d-",
+        "Test pre-condition failure: Unexpected RInChI string from RXN file.");
+
+    rinchi::MdlRxnfileWriter rxn_writer;
+    std::stringstream rxn_file_stream_written;
+    rxn_writer.write_reaction(rxn, rxn_file_stream_written);
+
+    // We should be able to read back the RXN file and get the same RInChI as before.
+    rinchi::Reaction rxn2;
+    std::stringstream rxn_file_stream_read (rxn_file_stream_written.str());
+    rxn_reader.read_reaction(rxn_file_stream_read, rxn2);
+    rinchi_string = rxn2.rinchi_string();
+    rinchi::unit_test::check_is_equal(rinchi_string,
+        "RInChI=1.00.1S/C4H8O/c1-3-4(2)5-3/h3-4H,1-2H3/t3-,4-/m0/s1<>"
+        "C4H9BrO/c1-3(5)4(2)6/h3-4,6H,1-2H3/t3-,4+/m1/s1!Na.H2O/h;1H2/q+1;/p-1<>"
+        "ClH.Na/h1H;/q;+1/p-1!ClH/h1H!H2O/h1H2/d-",
+        "Round-trip failure: Unexpected RInChI string produced when reading back output.");
+
+    // If we force the RXN file writer to suppress agent output, then we should get
+    // an agent-less RInChI when reading it back.
+    std::stringstream rxn_file_stream_written2;
+    //                                                         +-- Do not write agents.
+    rxn_writer.write_reaction(rxn2, rxn_file_stream_written2, false);
+
+    rinchi::Reaction rxn3;
+    std::stringstream rxn_file_stream_read2 (rxn_file_stream_written2.str());
+    rxn_reader.read_reaction(rxn_file_stream_read2, rxn3);
+    rinchi_string = rxn3.rinchi_string();
+    rinchi::unit_test::check_is_equal(rinchi_string,
+        "RInChI=1.00.1S/C4H8O/c1-3-4(2)5-3/h3-4H,1-2H3/t3-,4-/m0/s1<>"
+        "C4H9BrO/c1-3(5)4(2)6/h3-4,6H,1-2H3/t3-,4+/m1/s1!Na.H2O/h;1H2/q+1;/p-1/d-",
+        "Round-trip failure: Unexpected RInChI string produced when reading back output (with suppressed agents).");
+}
+
 } // end of namespace

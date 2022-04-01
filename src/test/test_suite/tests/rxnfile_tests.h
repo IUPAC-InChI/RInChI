@@ -50,6 +50,8 @@ class RxnfileTests: public rinchi::unit_test::TestCase {
 		void equilibrium_override();
 
 		void chiral_flag_preservation();
+		// MdlRxnfileWriter should optionally write out agents.
+		void agent_support_in_writer();
 
 		RxnfileTests()
 		{
@@ -57,6 +59,7 @@ class RxnfileTests: public rinchi::unit_test::TestCase {
 			REGISTER_TEST(RxnfileTests, equilibrium_override);
 
 			REGISTER_TEST(RxnfileTests, chiral_flag_preservation);
+			REGISTER_TEST(RxnfileTests, agent_support_in_writer);
 
 			goto_subdir("rxnfiles");
 		}
