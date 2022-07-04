@@ -1,0 +1,2 @@
+Mac: To be able to make the project using the Makefile_Macos makefile, make
+sure that a compiler of version 6 is available with g++-6 and gcc-6 aliases.

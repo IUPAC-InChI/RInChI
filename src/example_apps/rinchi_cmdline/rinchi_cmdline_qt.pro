@@ -75,3 +75,8 @@ SOURCES += \
 	./../../../INCHI-1-API/INCHI_API/inchi_dll/sha2.c \
 	./../../../INCHI-1-API/INCHI_API/inchi_dll/strutil.c \
 	./../../../INCHI-1-API/INCHI_API/inchi_dll/util.c \
+
+# Ensure compiler version
+QMAKE_CC = gcc-6
+QMAKE_CXX = g++-6
+QMAKE_LINK = g++-6

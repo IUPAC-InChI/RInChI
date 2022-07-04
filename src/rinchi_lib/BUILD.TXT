@@ -4,3 +4,6 @@ library that you produce matches the bitness of your Python version.
 
 To run the "test.py" example file, adjust the path to the DLL/shared library
 in the first line where the RInChI lib is instantiated.
+
+Mac: To be able to make the project using the Makefile_Macos makefile, make
+sure that a compiler of version 6 is available with g++-6 and gcc-6 aliases.
