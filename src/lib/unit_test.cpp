@@ -175,10 +175,10 @@ void TestCase::run_tests() {
 	std::cout << std::endl << std::endl;
 }
 
-void check_errmsg_has_substr(const std::string& err_msg, const std::string& sub_str)
+void check_errmsg_has_substr(const std::string& err_msg, const std::string& sub_str, const std::string& additional_context)
 {
 	if (err_msg.find(sub_str) == std::string::npos)
-		throw TestFailure("unexpected error: " + err_msg + "; expected something containing '" + sub_str + "'.");
+		throw TestFailure("unexpected error: " + err_msg + "; expected something containing '" + sub_str + "' [Context: " + additional_context + "].");
 }
 
 } } // End of namespaces.
