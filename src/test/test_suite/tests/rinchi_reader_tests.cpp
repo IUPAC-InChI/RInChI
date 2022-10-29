@@ -63,7 +63,7 @@ namespace {
 			rdr.split_into_reaction(rinchi_string, rauxinfo, rxn);
 			throw rinchi::unit_test::TestFailure("Case " + case_no + " did not fail as expected.");
 		} catch (std::exception& e) {
-			rinchi::unit_test::check_errmsg_has_substr(e.what(), errmsg_expected);
+			rinchi::unit_test::check_errmsg_has_substr(e.what(), errmsg_expected, "Case " + case_no);
 		}
 	}
 
@@ -90,16 +90,16 @@ void RInChIReaderTests::error_cases()
 {
 	check_rinchi_parsing_error(
 		"01",
-		"RInChI=1.00.1S/H3NO/c1-2/h2H,1H2/ hummus", "", "Structure: 1 Syntax error (-2) in MOBILE_H_ISO_LAYER_FORK (9)"
+		"RInChI=1.00.1S/H3NO/c1-2/h2H,1H2/ hummus", "", "Invalid trailing text in component InChI 'H3NO/c1-2/h2H,1H2/ hummus'."
 	);
 	// RAuxInfo is not allowed as trailing data to the InChI.
 	check_rinchi_parsing_error(
 		"02",
-		"RInChI=1.00.1S/<>H3NO/c1-2/h2H,1H2/d- RAuxInfo=1.00.1/<>/", "", "Structure: 1 Syntax error (-2) in MOBILE_H_ISO_LAYER_FORK (9)"
+		"RInChI=1.00.1S/<>H3NO/c1-2/h2H,1H2/d- RAuxInfo=1.00.1/<>/", "", "Invalid trailing text in component InChI 'H3NO/c1-2/h2H,1H2/d- RAuxInfo=1.00.1/'."
 	);
 	check_rinchi_parsing_error(
 		"03",
-		"RInChI=1.00.1S/<>H3NO/c1-2/h2H,1H2/d-\nRAuxInfo=1.00.1/<>/", "", "Structure: 1 Syntax error (-2) in MOBILE_H_ISO_LAYER_FORK (9)"
+		"RInChI=1.00.1S/<>H3NO/c1-2/h2H,1H2/d-\nRAuxInfo=1.00.1/<>/", "", "Invalid trailing text in component InChI 'H3NO/c1-2/h2H,1H2/d-\nRAuxInfo=1.00.1/'."
 	);
 
 	// Invalid RAuxInfo.
