@@ -168,26 +168,28 @@ public:
 
 void InChIGenerator::calculate_inchi(inchi_Input& inchi_input, std::string& o_inchi_string, std::string& o_aux_info)
 {
-/*	** InChI modularized interface crashes if inchi_input is a No-Structure.
-    ** The simpler lib_GetINCHI() API is more stable, so we'll use that instead.
+    /*	** InChI modularized interface crashes if inchi_input is a No-Structure.
+        ** The simpler lib_GetINCHI() API would accept No-Structure input in InChI
+        ** 1.0.4 but no longer in 1.0.6. So we will handle No-Structure input
+        ** locally and not pass it to the InChI library.
+        */
 
-	InChICallState call_state;
-	call_state.run_inchi_generation(inchi_input);
+    if (inchi_input.num_atoms == 0) {
+        o_inchi_string = NOSTRUCT_INCHI;
+		o_aux_info     = NOSTRUCT_AUXINFO;
+    }
+    else {
+        inchi_Output inchi_output;
+        memset(&inchi_output, 0, sizeof(inchi_output));
 
-	o_inchi_string = inchi_lib_state.inchi_result.szInChI;
-	o_aux_info     = inchi_lib_state.inchi_result.szAuxInfo;
-	*/
-	
-	inchi_Output inchi_output;
-	memset(&inchi_output, 0, sizeof(inchi_output));
-
-	int rc = lib_GetINCHI(&inchi_input, &inchi_output);
-	if (rc == inchi_Ret_OKAY || rc == inchi_Ret_WARNING) {
-		o_inchi_string = inchi_output.szInChI;
-		o_aux_info     = inchi_output.szAuxInfo;
-	}
-	lib_FreeINCHI(&inchi_output);
-	InChICallState::check_return_code(rc);
+        int rc = lib_GetINCHI(&inchi_input, &inchi_output);
+        if (rc == inchi_Ret_OKAY || rc == inchi_Ret_WARNING) {
+            o_inchi_string = inchi_output.szInChI;
+            o_aux_info     = inchi_output.szAuxInfo;
+        }
+        lib_FreeINCHI(&inchi_output);
+        InChICallState::check_return_code(rc);
+    }
 }
 
 void InChIGenerator::validate_inchi(const std::string& inchi_string)
