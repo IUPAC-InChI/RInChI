@@ -178,7 +178,7 @@ OBJECTS       = rinchi_utils.o \
 		inchi_dll_a.o \
 		inchi_dll_a2.o \
 		inchi_dll_b.o
-DIST  = ../../lib/rinchi_utils.cpp \
+DIST          = ../../lib/rinchi_utils.cpp \
 		../../lib/rinchi_logger.cpp \
 		../../lib/inchi_api_intf.cpp \
 		../../lib/inchi_generator.cpp \
@@ -253,6 +253,8 @@ first: all
 
 $(TARGET):  $(OBJECTS)  
 	$(LINK) $(LFLAGS) -o $(TARGET) $(OBJECTS) $(OBJCOMP) $(LIBS)
+
+
 
 all: Makefile-64bit $(TARGET)
 
