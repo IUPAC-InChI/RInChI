@@ -64,14 +64,14 @@ namespace rinchi_tests {
 
 class MolfileReaderTests: public rinchi::unit_test::TestCase {
 	public:
-		// Regression test against InChI 1.04's standard test data.
+		// Regression test against InChI 1.06's standard test data.
 		// The standard test data set contains V2000 molfiles only.
-		void inchi_1_04_regress();
+		void inchi_1_06_regress();
 
 		// Very-old-style molfiles without V2000/V3000 version headers.
 		void old_style_molfiles();
 
-		// Check that a subset of InChI 1.04's standard test data
+		// Check that a subset of InChI 1.06's standard test data
 		// converted to V3000 format can be read by the V3000 reader.
 		void V3000_reader();
 
@@ -80,7 +80,7 @@ class MolfileReaderTests: public rinchi::unit_test::TestCase {
 		    // If you haven't downloaded the InChI test data, compile with this
 		    // define to skip the regression test.
 		    #ifndef SKIP_MOLFILE_READER_INCHI_REGRESS_TEST
-			REGISTER_TEST(MolfileReaderTests, inchi_1_04_regress);
+			REGISTER_TEST(MolfileReaderTests, inchi_1_06_regress);
 		    #endif
 			REGISTER_TEST(MolfileReaderTests, old_style_molfiles);
 			REGISTER_TEST(MolfileReaderTests, V3000_reader);

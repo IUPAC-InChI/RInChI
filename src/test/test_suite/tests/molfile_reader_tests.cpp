@@ -52,10 +52,10 @@
 
 namespace rinchi_tests {
 
-void MolfileReaderTests::inchi_1_04_regress()
+void MolfileReaderTests::inchi_1_06_regress()
 {
 	std::ifstream sdfile ("../../INCHI-1-TEST/test/InChI_TestSet.sdf");
-	std::ifstream expected_data ("../../INCHI-1-TEST/test/InChI_TestSet-std-01.txt");
+	std::ifstream expected_data ("../../INCHI-1-TEST/test/its-std-01.inc");
 
 	std::string expected_inchi_string;
 	std::string expected_inchi_key;
@@ -63,7 +63,7 @@ void MolfileReaderTests::inchi_1_04_regress()
 	if (!sdfile)
 		throw rinchi::unit_test::TestFailure("Can't open InChI standard input test set 'InChI_TestSet.sdf'.");
 	if (!expected_data)
-		throw rinchi::unit_test::TestFailure("Can't open InChI standard test results 'InChI_TestSet-std-01.txt'.");
+		throw rinchi::unit_test::TestFailure("Can't open InChI standard test results 'its-std-01.inc'.");
 
 	int current_line_no = 1;
 	int mol_no = 1;
@@ -88,15 +88,14 @@ void MolfileReaderTests::inchi_1_04_regress()
 			rinchi::ReactionComponent rxncomp;
 			molreader.read_molecule(molfile, rxncomp);
 
-			rinchi::unit_test::check_is_equal(
+            rinchi::unit_test::check_is_equal(
 				rxncomp.inchi_string(), expected_inchi_string,
 				"InChI string: Mol #" + rinchi::int2str(mol_no) + "; record ending at line " + rinchi::int2str(current_line_no) + ".");
 			rinchi::unit_test::check_is_equal(
 				"InChIKey=" + rxncomp.inchi_key(), expected_inchi_key,
 				"InChI key: Mol #" + rinchi::int2str(mol_no) + "; record ending at line " + rinchi::int2str(current_line_no) + ".");
 
-			// Uncomment to aid debugging if a molecule fails the test: // std::cout << "    #" << mol_no << ", ending at line " << current_line_no << "\r";
-			mol_no++;
+            mol_no++;
 		}
 	}
 	std::cout << " [" << (mol_no - 1) << " mols tested]";
