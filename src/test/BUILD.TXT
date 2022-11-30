@@ -24,18 +24,16 @@ working directory, e.g.
 	.\test_suite\Release\rinchi_test_suite_msvc.exe
 
 One of the tests is an InChI regression test that checks that molfiles read by
-RInChI produces InChIs that match what the standard InChI 1.04 executable produces.
-This test uses a standard test dataset from InChI 1.04. You will need to download
-this dataset from
+RInChI produces InChIs that match what the standard InChI 1.06 executable produces.
+This test uses a standard test dataset from InChI 1.06. You will need to download
+this dataset by running the test data download script in the scripts/ folder. Make
+sure that you run this script from the RInChI root directory so the test data gets
+unpacked in the correct place.
 
-	http://www.inchi-trust.org/download/104/INCHI-1-TEST.zip
+	cd %RINCHI_ROOT%
+	/bin/bash ./scripts/download_inchi_test-data.sh
 
-	Unpack the INCHI-1-TEST.zip file folder and place the "INCHI-1-TEST"
-	folder in the same parent folder as RInChI's "src" folder. Unpack the
-	test result file "INCHI-1-TEST\test\InChI_TestSet-result.zip" and place
-	the resulting text files in the same folder as the zip-file, that is,
-	in "INCHI-1-TEST\test\". The regression test uses the file
-	"InChI_TestSet-std-01.txt".
+This downloads and unpacks the necessary test data sets and expected results files.
 
 NOTE:
 	The debug Windows builds are configured to skip this regression test. The debug build
