@@ -43,11 +43,11 @@
 #include <string>
 #include <vector>
 #include <algorithm>
-#include <rinchi_platform.h>
+#include <stdexcept>
+#include "rinchi_platform.h"
 
 #if defined(ON_LINUX) || defined(ON_SOLARIS)
 	#include <math.h>
-	#include <stdexcept>
 	#include <string.h>
 #endif
 
