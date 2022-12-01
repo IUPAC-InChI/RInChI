@@ -28,23 +28,27 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -79,8 +83,8 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;RINCHI_DEBUG_TO_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\INCHI-1-API\INCHI\common;..\..\lib\;..\..\parsers\;..\..\rinchi\;..\..\writers\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;TARGET_API_LIB;RINCHI_DEBUG_TO_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\INCHI-1-SRC\INCHI_BASE\src;..\..\lib\;..\..\parsers\;..\..\rinchi\;..\..\writers\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -92,8 +96,8 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;RINCHI_DEBUG_TO_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\INCHI-1-API\INCHI\common;..\..\lib\;..\..\parsers\;..\..\rinchi\;..\..\writers\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;TARGET_API_LIB;RINCHI_DEBUG_TO_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\INCHI-1-SRC\INCHI_BASE\src;..\..\lib\;..\..\parsers\;..\..\rinchi\;..\..\writers\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -107,8 +111,8 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\INCHI-1-API\INCHI\common;..\..\lib\;..\..\parsers\;..\..\rinchi\;..\..\writers\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;TARGET_API_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\INCHI-1-SRC\INCHI_BASE\src;..\..\lib\;..\..\parsers\;..\..\rinchi\;..\..\writers\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -125,8 +129,8 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\INCHI-1-API\INCHI\common;..\..\lib\;..\..\parsers\;..\..\rinchi\;..\..\writers\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;TARGET_API_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\INCHI-1-SRC\INCHI_BASE\src;..\..\lib\;..\..\parsers\;..\..\rinchi\;..\..\writers\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -137,46 +141,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\INCHI-1-API\INCHI_API\inchi_dll\ichican2.c" />
-    <ClCompile Include="..\..\..\INCHI-1-API\INCHI_API\inchi_dll\ichicano.c" />
-    <ClCompile Include="..\..\..\INCHI-1-API\INCHI_API\inchi_dll\ichicans.c" />
-    <ClCompile Include="..\..\..\INCHI-1-API\INCHI_API\inchi_dll\ichiisot.c" />
-    <ClCompile Include="..\..\..\INCHI-1-API\INCHI_API\inchi_dll\ichilnct.c" />
-    <ClCompile Include="..\..\..\INCHI-1-API\INCHI_API\inchi_dll\ichimak2.c" />
-    <ClCompile Include="..\..\..\INCHI-1-API\INCHI_API\inchi_dll\ichimake.c" />
-    <ClCompile Include="..\..\..\INCHI-1-API\INCHI_API\inchi_dll\ichimap1.c" />
-    <ClCompile Include="..\..\..\INCHI-1-API\INCHI_API\inchi_dll\ichimap2.c" />
-    <ClCompile Include="..\..\..\INCHI-1-API\INCHI_API\inchi_dll\ichimap4.c" />
-    <ClCompile Include="..\..\..\INCHI-1-API\INCHI_API\inchi_dll\ichinorm.c" />
-    <ClCompile Include="..\..\..\INCHI-1-API\INCHI_API\inchi_dll\ichiparm.c" />
-    <ClCompile Include="..\..\..\INCHI-1-API\INCHI_API\inchi_dll\ichiprt1.c" />
-    <ClCompile Include="..\..\..\INCHI-1-API\INCHI_API\inchi_dll\ichiprt2.c" />
-    <ClCompile Include="..\..\..\INCHI-1-API\INCHI_API\inchi_dll\ichiprt3.c" />
-    <ClCompile Include="..\..\..\INCHI-1-API\INCHI_API\inchi_dll\ichiqueu.c" />
-    <ClCompile Include="..\..\..\INCHI-1-API\INCHI_API\inchi_dll\ichiread.c" />
-    <ClCompile Include="..\..\..\INCHI-1-API\INCHI_API\inchi_dll\ichiring.c" />
-    <ClCompile Include="..\..\..\INCHI-1-API\INCHI_API\inchi_dll\ichirvr1.c" />
-    <ClCompile Include="..\..\..\INCHI-1-API\INCHI_API\inchi_dll\ichirvr2.c" />
-    <ClCompile Include="..\..\..\INCHI-1-API\INCHI_API\inchi_dll\ichirvr3.c" />
-    <ClCompile Include="..\..\..\INCHI-1-API\INCHI_API\inchi_dll\ichirvr4.c" />
-    <ClCompile Include="..\..\..\INCHI-1-API\INCHI_API\inchi_dll\ichirvr5.c" />
-    <ClCompile Include="..\..\..\INCHI-1-API\INCHI_API\inchi_dll\ichirvr6.c" />
-    <ClCompile Include="..\..\..\INCHI-1-API\INCHI_API\inchi_dll\ichirvr7.c" />
-    <ClCompile Include="..\..\..\INCHI-1-API\INCHI_API\inchi_dll\ichisort.c" />
-    <ClCompile Include="..\..\..\INCHI-1-API\INCHI_API\inchi_dll\ichister.c" />
-    <ClCompile Include="..\..\..\INCHI-1-API\INCHI_API\inchi_dll\ichitaut.c" />
-    <ClCompile Include="..\..\..\INCHI-1-API\INCHI_API\inchi_dll\ichi_bns.c" />
-    <ClCompile Include="..\..\..\INCHI-1-API\INCHI_API\inchi_dll\ichi_io.c" />
-    <ClCompile Include="..\..\..\INCHI-1-API\INCHI_API\inchi_dll\ikey_base26.c" />
-    <ClCompile Include="..\..\..\INCHI-1-API\INCHI_API\inchi_dll\ikey_dll.c" />
-    <ClCompile Include="..\..\..\INCHI-1-API\INCHI_API\inchi_dll\inchi_dll.c" />
-    <ClCompile Include="..\..\..\INCHI-1-API\INCHI_API\inchi_dll\inchi_dll_a.c" />
-    <ClCompile Include="..\..\..\INCHI-1-API\INCHI_API\inchi_dll\inchi_dll_a2.c" />
-    <ClCompile Include="..\..\..\INCHI-1-API\INCHI_API\inchi_dll\inchi_dll_main.c" />
-    <ClCompile Include="..\..\..\INCHI-1-API\INCHI_API\inchi_dll\runichi.c" />
-    <ClCompile Include="..\..\..\INCHI-1-API\INCHI_API\inchi_dll\sha2.c" />
-    <ClCompile Include="..\..\..\INCHI-1-API\INCHI_API\inchi_dll\strutil.c" />
-    <ClCompile Include="..\..\..\INCHI-1-API\INCHI_API\inchi_dll\util.c" />
     <ClCompile Include="..\..\lib\inchi_api_intf.cpp" />
     <ClCompile Include="..\..\lib\inchi_generator.cpp" />
     <ClCompile Include="..\..\lib\rinchi_hashing.cpp" />
@@ -192,6 +156,56 @@
     <ClCompile Include="..\..\writers\mdl_rdfile_writer.cpp" />
     <ClCompile Include="..\..\writers\mdl_rxnfile_writer.cpp" />
     <ClCompile Include="rxn_from_molfiles.cpp" />
+    <ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\ichi_bns.c" />
+    <ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\ichi_io.c" />
+    <ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\ichican2.c" />
+    <ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\ichicano.c" />
+    <ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\ichicans.c" />
+    <ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\ichierr.c" />
+    <ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\ichiisot.c" />
+    <ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\ichimak2.c" />
+    <ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\ichimake.c" />
+    <ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\ichimap1.c" />
+    <ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\ichimap2.c" />
+    <ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\ichimap4.c" />
+    <ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\ichinorm.c" />
+    <ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\ichiparm.c" />
+    <ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\ichiprt1.c" />
+    <ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\ichiprt2.c" />
+    <ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\ichiprt3.c" />
+    <ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\ichiqueu.c" />
+    <ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\ichiread.c" />
+    <ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\ichiring.c" />
+    <ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\ichirvr1.c" />
+    <ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\ichirvr2.c" />
+    <ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\ichirvr3.c" />
+    <ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\ichirvr4.c" />
+    <ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\ichirvr5.c" />
+    <ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\ichirvr6.c" />
+    <ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\ichirvr7.c" />
+    <ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\ichisort.c" />
+    <ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\ichister.c" />
+    <ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\ichitaut.c" />
+    <ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\ikey_base26.c" />
+    <ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\ikey_dll.c" />
+	<ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\mol_fmt1.c" />
+	<ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\mol_fmt2.c" />
+	<ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\mol_fmt3.c" />
+	<ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\mol_fmt4.c" />
+	<ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\mol2atom.c" />
+	<ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\readinch.c" />
+	<ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\runichi.c" />
+	<ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\runichi2.c" />
+	<ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\runichi3.c" />
+	<ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\runichi4.c" />
+    <ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\sha2.c" />
+    <ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\strutil.c" />
+    <ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_BASE\src\util.c" />
+    <ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_API\libinchi\src\ichilnct.c" />
+    <ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_API\libinchi\src\inchi_dll.c" />
+    <ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_API\libinchi\src\inchi_dll_a.c" />
+    <ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_API\libinchi\src\inchi_dll_a2.c" />
+    <ClCompile Include="..\..\..\INCHI-1-SRC\INCHI_API\libinchi\src\inchi_dll_b.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
