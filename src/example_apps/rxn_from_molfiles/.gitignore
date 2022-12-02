@@ -1,1 +1,4 @@
 rxn_from_molfiles
+rxn_from_molfiles_qt.pro.user
+*.o
+.qmake.stash

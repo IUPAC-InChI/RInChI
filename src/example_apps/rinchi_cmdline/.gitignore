@@ -1,1 +1,4 @@
+.qmake.stash
+*.o
 rinchi_cmdline
+rinchi_cmdline_qt.pro.user
