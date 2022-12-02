@@ -44,6 +44,13 @@
   and key.
 **/
 
+/*
+* MSVC will warn that fopen() and strcpy() are insecure and will suggest using fopen_s() and
+* strcpy_s() instead. However, these are not easily available on POSIX platforms, so to keep
+* the example maximally portable, I have chosen to disable those MSVC warnings instead.
+*/
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
