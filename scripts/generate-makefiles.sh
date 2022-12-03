@@ -12,9 +12,9 @@ python $SCRIPT_DIR/cleanup_qmake_makefiles.py Makefile-32bit $1 > Makefile-32bit
 mv Makefile-32bit.new Makefile-32bit
 
 # The Mac makefile for building on an M1 cloud instance is identical to the
-# Makefile-64bit, except that we have to remove the "-Wl,-O1" option from the
-# linker flags.
-cat Makefile-64bit | sed 's/LFLAGS        = -m64 -Wl,-O1/LFLAGS        = -m64/' | sed 's/Makefile-64bit/Makefile-Mac/' > Makefile-Mac
+# Makefile-64bit, except that we have to remove the "-Wl,-O1" and "-Wl,-soname"
+# options from the linker flags.
+cat Makefile-64bit | sed 's/LFLAGS        = -m64 -Wl,-O1/LFLAGS        = -m64/' | sed 's/ -Wl,-soname,[^[:space:]]*//' | sed 's/Makefile-64bit/Makefile-Mac/' > Makefile-Mac
 
 # The Raspberry makefile is identical to the Makefile-64bit, except that the
 # "-m64" flag is removed.
