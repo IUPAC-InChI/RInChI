@@ -54,8 +54,8 @@ namespace rinchi_tests {
 
 void MolfileReaderTests::inchi_1_06_regress()
 {
-	std::ifstream sdfile ("../../INCHI-1-TEST/test/InChI_TestSet.sdf");
-	std::ifstream expected_data ("../../INCHI-1-TEST/test/its-std-01.inc");
+	std::ifstream sdfile ("INCHI-1_testset/InChI_TestSet.sdf");
+	std::ifstream expected_data ("INCHI-1_testset/its-std-01.inc");
 
 	std::string expected_inchi_string;
 	std::string expected_inchi_key;
