@@ -1,2 +1,3 @@
 .qmake.stash
 rinchi_ora_cartridge_qt.pro.user
+*.so*
