@@ -2,5 +2,9 @@ Since this DLL/shared library is meant to be loaded from Python there should be
 no need to build "Debug" builds. Make sure that the bitness of the DLL/shared
 library that you produce matches the bitness of your Python version.
 
+If you are on an arm64 Mac (e.g. an M1) with an x86_64 Python, the shared
+library must be built with the Makefile-Mac-arm64-with-x86-Python makefile.
+This builds an x86_64 library so it can be loaded from Python.
+
 To run the "test.py" example file, adjust the path to the DLL/shared library
 in the first line where the RInChI lib is instantiated.
