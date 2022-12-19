@@ -4,7 +4,18 @@ library that you produce matches the bitness of your Python version.
 
 If you are on an arm64 Mac (e.g. an M1) with an x86_64 Python, the shared
 library must be built with the Makefile-Mac-arm64-with-x86-Python makefile.
-This builds an x86_64 library so it can be loaded from Python.
+This builds an x86_64 library so it can be loaded from x86_64 Python.
 
-To run the "test.py" example file, adjust the path to the DLL/shared library
-in the first line where the RInChI lib is instantiated.
+If you use the supplied makefiles the resulting shared library will be output
+in the current directory and the default path in the "test.py" example script
+should work. Otherwise, adjust the path to the DLL/shared library in the first
+line of "test.py" where the RInChI lib is instantiated.
+
+The output from "test.py" should exactly match the text in
+"test.py.expected_output.txt". To verify that, you can run the script like
+this:
+
+	python test.py > /tmp/test.py.out.txt
+	diff -u /tmp/test.py.out.txt test.py.expected_output.txt
+
+There should be no output from the "diff" command.

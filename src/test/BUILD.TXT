@@ -23,16 +23,18 @@ e.g.:
 	LFLAGS        = -m64 -L/Users/userxxx/boost/boost_1_80_0/stage/lib
 
 To successfully run the test suite, make sure that its working directory is this
-directory, that is: .../rinchi/test/. This is setup in the MSVC and QT project, but
+directory, that is: .../src/test/. This is setup in the MSVC and QT project, but
 if you run the test executable directly you need to explicitly take care of the
 working directory, e.g.
 
-	cd %RINCHI_ROOT%\rinchi\test\
+	cd %RINCHI_ROOT%\src\test\
 	.\test_suite\Release\rinchi_test_suite_msvc.exe
 
 One of the tests is an InChI regression test that checks that molfiles read by
 RInChI produces InChIs that match what the standard InChI 1.06 executable produces.
-This test uses a standard test dataset from InChI 1.06.
+This test uses a standard test dataset from InChI 1.06 which can be found in
+.../src/test/INCHI-1_testset/. The full InChI 1.06 test data set can be downloaded
+by using the script .../scripts/download_inchi_test_data.sh.
 
 NOTE:
 	The debug Windows builds are configured to skip this regression test. The debug build
