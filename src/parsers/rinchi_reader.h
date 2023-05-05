@@ -95,7 +95,8 @@ public:
 		AuxInfo=...  <-- Reactant #2, AuxInfo
 		InChI=...    <-- Reactant #3
 
-		In the last example, only reactant #2 will have AuxInfo attached.
+		In the last example, only reactant #2 will have AuxInfo attached. This mode of mixing
+		components with and without AuxInfo is NOT recommended.
         **/
 	void add_inchis_to_reaction(const std::string& reactant_inchis, const std::string& product_inchis, const std::string& agent_inchis, Reaction& rxn);
 

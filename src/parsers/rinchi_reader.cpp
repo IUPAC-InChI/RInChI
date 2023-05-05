@@ -55,6 +55,21 @@
 namespace rinchi {
 
 	class RInChIReaderHelper {
+    private:
+        // Validate the direct-loaded InChI string and AuxInfo (if any).
+        static void validate_reaction_component_inchi_strings(ReactionComponent* c)
+        {
+            InChIGenerator().validate_inchi(c->m_inchi_string);
+            if (!c->m_inchi_auxinfo.empty()) {
+                // Validate AuxInfo by attempting a structure rebuild.
+                try {
+                    InChIToStructureConverter().to_molfile(c->m_inchi_string, c->m_inchi_auxinfo);
+                } catch (std::exception&) {
+                    throw RInChIReaderError("Invalid AuxInfo '" + c->m_inchi_auxinfo + "' for a reaction component.");
+                }
+            }
+        }
+
 	public:
 		static void create_components_from_inchigroup(const std::string& inchigroup, ReactionComponentList& components)
 		{
@@ -136,13 +151,19 @@ namespace rinchi {
             std::string line;
             int line_no = 1;
 
+            // A single trailing blank line is accepted.
+            bool blank_line_detected = false;
             ReactionComponent* c = nullptr;
             while (inchi_lines_stream) {
                 rinchi_getline(inchi_lines_stream, line);
+                if (blank_line_detected && inchi_lines_stream)
+                    throw RInChIReaderError("Line " + int2str(line_no) + ": Unexpected trailing data; expected an EOF after previous blank line.");
                 // ' line.rfind("ABC", 0) == 0 ' is equivalent to ' line.starts_with("ABC") '.
                 if (line.rfind("InChI=", 0) == 0) {
                     if (c == nullptr || !c->inchi_string().empty()) {
-                        //** TODO: if c != nullptr => validate c.inchi_string and c.auxinfo.
+                        // Check previously added component, if any.
+                        if (c != nullptr)
+                            validate_reaction_component_inchi_strings(c);
                         // Add new component to reaction.
                         c = new ReactionComponent();
                         components.push_back(c);
@@ -154,11 +175,17 @@ namespace rinchi {
                         throw new RInChIReaderError ("Line " + int2str(line_no) + ": AuxInfo without preceeding InChI string.");
                     c->m_inchi_auxinfo = line;
                 }
+                else if (line.empty()) {
+                    blank_line_detected = true;
+                }
                 else
                     throw RInChIReaderError("Line " + int2str(line_no) + ": Unexpected line data; expected an InChI or AuxInfo string.");
 
                 ++line_no;
             }
+            // Check last-added reaction component.
+            if (c != nullptr)
+                validate_reaction_component_inchi_strings(c);
         }
 
         static void add_inchis_to_reaction(const std::string& reactant_inchis, const std::string& product_inchis, const std::string& agent_inchis, Reaction& rxn)

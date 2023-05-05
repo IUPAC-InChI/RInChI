@@ -213,4 +213,136 @@ void RInChIReaderTests::no_structures()
 	/** More in-depth No-Structure parsing is covered in ReactionTests test suite. **/
 }
 
+namespace {
+
+	void check_rinchi_text_load(
+		const std::string& case_no,
+		const std::string& reactant_inchis, const std::string& product_inchis, const std::string& agent_inchis,
+		const std::string& rinchi_expected, const std::string& rauxinfo_expected
+	)
+	{
+		rinchi::RInChIReader rdr;
+		rinchi::Reaction rxn;
+		rdr.add_inchis_to_reaction(reactant_inchis, product_inchis, agent_inchis, rxn);
+
+		rinchi::unit_test::check_is_equal(rxn.rinchi_string(), rinchi_expected, case_no + " RInChI string");
+		rinchi::unit_test::check_is_equal(rxn.rinchi_auxinfo(), rauxinfo_expected, case_no + " RAuxInfo");
+	}
+
+    void check_rinchi_text_load_error(
+		const std::string& case_no,
+		const std::string& reactant_inchis, const std::string& product_inchis, const std::string& agent_inchis,
+		const std::string& errmsg_expected
+	)
+	{
+		rinchi::RInChIReader rdr;
+		rinchi::Reaction rxn;
+        try {
+            rdr.add_inchis_to_reaction(reactant_inchis, product_inchis, agent_inchis, rxn);
+            rinchi::unit_test::check_is_equal(true, false, case_no + ": No error raised as expected.");
+        } catch (std::exception& e) {
+            rinchi::unit_test::check_errmsg_has_substr(e.what(), errmsg_expected);
+        }
+	}
+
+} // end of anon. namespace.
+
+void RInChIReaderTests::load_inchis_from_text()
+{
+    // R005a.rxn with RAuxInfo.
+    check_rinchi_text_load(
+        "01",
+        "InChI=1S/C4H9BrO/c1-3(5)4(2)6/h3-4,6H,1-2H3/t3-,4+/m1/s1" "\n"
+        "AuxInfo=1/0/N:4,1,3,2,6,5/it:im/rA:6nCCCCOBr/rB:s1;s2;s3;N2;P3;/rC:-.825,-.7557,0;-.4125,-.0412,0;.4125,-.0412,0;.825,.6733,0;-.626,.7557,0;.825,-.7557,0;" "\n"
+        "InChI=1S/Na.H2O/h;1H2/q+1;/p-1" "\n"
+        "AuxInfo=1/1/N:1;2/rA:2nNaO/rB:s1;/rC:-.4125,0,0;.4125,0,0;"
+        ,
+        "InChI=1S/C4H8O/c1-3-4(2)5-3/h3-4H,1-2H3/t3-,4?/m0/s1" "\n"
+        "AuxInfo=1/0/N:4,1,3,2,5/E:(1,2)(3,4)/it:im/rA:5nCCCCO/rB:N1;s2;P3;s2s3;/rC:-1.127,-.5635,0;-.4125,-.151,0;.4125,-.151,0;1.127,-.5635,0;0,.5635,0;"
+        ,
+        ""
+        ,
+        "RInChI=1.00.1S/C4H8O/c1-3-4(2)5-3/h3-4H,1-2H3/t3-,4?/m0/s1<>C4H9BrO/c1-3(5)4(2)6/h3-4,6H,1-2H3/t3-,4+/m1/s1!Na.H2O/h;1H2/q+1;/p-1/d-",
+        "RAuxInfo=1.00.1/0/N:4,1,3,2,5/E:(1,2)(3,4)/it:im/rA:5nCCCCO/rB:N1;s2;P3;s2s3;/rC:-1.127,-.5635,0;-.4125,-.151,0;.4125,-.151,0;1.127,-.5635,0;0,.5635,0;<>0/N:4,1,3,2,6,5/it:im/rA:6nCCCCOBr/rB:s1;s2;s3;N2;P3;/rC:-.825,-.7557,0;-.4125,-.0412,0;.4125,-.0412,0;.825,.6733,0;-.626,.7557,0;.825,-.7557,0;!1/N:1;2/rA:2nNaO/rB:s1;/rC:-.4125,0,0;.4125,0,0;"
+    );
+    // Same as case 01, but with a trailing blank line after reactants and products.
+    check_rinchi_text_load(
+        "02",
+        "InChI=1S/C4H9BrO/c1-3(5)4(2)6/h3-4,6H,1-2H3/t3-,4+/m1/s1" "\n"
+        "AuxInfo=1/0/N:4,1,3,2,6,5/it:im/rA:6nCCCCOBr/rB:s1;s2;s3;N2;P3;/rC:-.825,-.7557,0;-.4125,-.0412,0;.4125,-.0412,0;.825,.6733,0;-.626,.7557,0;.825,-.7557,0;" "\n"
+        "InChI=1S/Na.H2O/h;1H2/q+1;/p-1" "\n"
+        "AuxInfo=1/1/N:1;2/rA:2nNaO/rB:s1;/rC:-.4125,0,0;.4125,0,0;" "\n"
+        ,
+        "InChI=1S/C4H8O/c1-3-4(2)5-3/h3-4H,1-2H3/t3-,4?/m0/s1" "\n"
+        "AuxInfo=1/0/N:4,1,3,2,5/E:(1,2)(3,4)/it:im/rA:5nCCCCO/rB:N1;s2;P3;s2s3;/rC:-1.127,-.5635,0;-.4125,-.151,0;.4125,-.151,0;1.127,-.5635,0;0,.5635,0;"
+        ,
+        ""
+        ,
+        "RInChI=1.00.1S/C4H8O/c1-3-4(2)5-3/h3-4H,1-2H3/t3-,4?/m0/s1<>C4H9BrO/c1-3(5)4(2)6/h3-4,6H,1-2H3/t3-,4+/m1/s1!Na.H2O/h;1H2/q+1;/p-1/d-",
+        "RAuxInfo=1.00.1/0/N:4,1,3,2,5/E:(1,2)(3,4)/it:im/rA:5nCCCCO/rB:N1;s2;P3;s2s3;/rC:-1.127,-.5635,0;-.4125,-.151,0;.4125,-.151,0;1.127,-.5635,0;0,.5635,0;<>0/N:4,1,3,2,6,5/it:im/rA:6nCCCCOBr/rB:s1;s2;s3;N2;P3;/rC:-.825,-.7557,0;-.4125,-.0412,0;.4125,-.0412,0;.825,.6733,0;-.626,.7557,0;.825,-.7557,0;!1/N:1;2/rA:2nNaO/rB:s1;/rC:-.4125,0,0;.4125,0,0;"
+    );
+    // Same as case 01, but with no AuxInfo.
+    check_rinchi_text_load(
+        "03",
+        "InChI=1S/C4H9BrO/c1-3(5)4(2)6/h3-4,6H,1-2H3/t3-,4+/m1/s1" "\n"
+        "InChI=1S/Na.H2O/h;1H2/q+1;/p-1" "\n"
+        ,
+        "InChI=1S/C4H8O/c1-3-4(2)5-3/h3-4H,1-2H3/t3-,4?/m0/s1" "\n"
+        ,
+        ""
+        ,
+        "RInChI=1.00.1S/C4H8O/c1-3-4(2)5-3/h3-4H,1-2H3/t3-,4?/m0/s1<>C4H9BrO/c1-3(5)4(2)6/h3-4,6H,1-2H3/t3-,4+/m1/s1!Na.H2O/h;1H2/q+1;/p-1/d-",
+        "RAuxInfo=1.00.1//<>/!/"
+    );
+
+    // Same as case 01, but with AuxInfo on only second reactant.
+    check_rinchi_text_load(
+        "04",
+        "InChI=1S/C4H9BrO/c1-3(5)4(2)6/h3-4,6H,1-2H3/t3-,4+/m1/s1" "\n"
+        "InChI=1S/Na.H2O/h;1H2/q+1;/p-1" "\n"
+        "AuxInfo=1/1/N:1;2/rA:2nNaO/rB:s1;/rC:-.4125,0,0;.4125,0,0;" "\n"
+        ,
+        "InChI=1S/C4H8O/c1-3-4(2)5-3/h3-4H,1-2H3/t3-,4?/m0/s1" "\n"
+        ,
+        ""
+        ,
+        "RInChI=1.00.1S/C4H8O/c1-3-4(2)5-3/h3-4H,1-2H3/t3-,4?/m0/s1<>C4H9BrO/c1-3(5)4(2)6/h3-4,6H,1-2H3/t3-,4+/m1/s1!Na.H2O/h;1H2/q+1;/p-1/d-",
+        "RAuxInfo=1.00.1//<>/!1/N:1;2/rA:2nNaO/rB:s1;/rC:-.4125,0,0;.4125,0,0;"
+    );
+
+    // === Error scenarios ===
+
+    // Same as case 02, but with data after a blank line in reactants. This should trigger an "EOF expected" error.
+    check_rinchi_text_load_error(
+        "11",
+        "InChI=1S/C4H9BrO/c1-3(5)4(2)6/h3-4,6H,1-2H3/t3-,4+/m1/s1" "\n"
+        "AuxInfo=1/0/N:4,1,3,2,6,5/it:im/rA:6nCCCCOBr/rB:s1;s2;s3;N2;P3;/rC:-.825,-.7557,0;-.4125,-.0412,0;.4125,-.0412,0;.825,.6733,0;-.626,.7557,0;.825,-.7557,0;" "\n"
+        "\n"
+        "InChI=1S/Na.H2O/h;1H2/q+1;/p-1" "\n"
+        "AuxInfo=1/1/N:1;2/rA:2nNaO/rB:s1;/rC:-.4125,0,0;.4125,0,0;" "\n"
+        ,
+        "InChI=1S/C4H8O/c1-3-4(2)5-3/h3-4H,1-2H3/t3-,4?/m0/s1" "\n"
+        "AuxInfo=1/0/N:4,1,3,2,5/E:(1,2)(3,4)/it:im/rA:5nCCCCO/rB:N1;s2;P3;s2s3;/rC:-1.127,-.5635,0;-.4125,-.151,0;.4125,-.151,0;1.127,-.5635,0;0,.5635,0;"
+        ,
+        ""
+        ,
+        "Line 4: Unexpected trailing data; expected an EOF after previous blank line."
+    );
+    // Same as case 02, but with the product's AuxInfo line truncated, rendering it invalid.
+    check_rinchi_text_load_error(
+        "12",
+        "InChI=1S/C4H9BrO/c1-3(5)4(2)6/h3-4,6H,1-2H3/t3-,4+/m1/s1" "\n"
+        "AuxInfo=1/0/N:4,1,3,2,6,5/it:im/rA:6nCCCCOBr/rB:s1;s2;s3;N2;P3;/rC:-.825,-.7557,0;-.4125,-.0412,0;.4125,-.0412,0;.825,.6733,0;-.626,.7557,0;.825,-.7557,0;" "\n"
+        "InChI=1S/Na.H2O/h;1H2/q+1;/p-1" "\n"
+        "AuxInfo=1/1/N:1;2/rA:2nNaO/rB:s1;/rC:-.4125,0,0;.4125,0,0;" "\n"
+        ,
+        "InChI=1S/C4H8O/c1-3-4(2)5-3/h3-4H,1-2H3/t3-,4?/m0/s1" "\n"
+        "AuxInfo=1/0/N:4,1,3,2,5/E:(1,2)(3,4)/it:im/rA:5nCCCCO/rB:N1;s2;P3;s2s3;/rC:-1.127,-.5635,0;-.4125,-.151,0;.4125,-.151,0"
+        ,
+        ""
+        ,
+        "Invalid AuxInfo 'AuxInfo=1/0/N:4,1,3,2,5/E:(1,2)(3,4)/it:im/rA:5nCCCCO/rB:N1;s2;P3;s2s3;/rC:-1.127,-.5635,0;-.4125,-.151,0;.4125,-.151,0' for a reaction component."
+    );
+}
+
 } // end of namespace
