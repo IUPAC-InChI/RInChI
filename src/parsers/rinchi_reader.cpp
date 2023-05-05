@@ -38,6 +38,7 @@
 #endif
 
 #include <memory>
+#include <sstream>
 
 #ifdef RINCHI_READER_DEBUG_TO_CONSOLE
 	#include <iostream>
@@ -126,7 +127,50 @@ namespace rinchi {
 			}
 		}
 
-	};
+        static void read_components(const std::string& inchi_lines, ReactionComponentList& components)
+        {
+            if (inchi_lines.empty())
+                return;
+
+            std::stringstream inchi_lines_stream (inchi_lines);
+            std::string line;
+            int line_no = 1;
+
+            ReactionComponent* c = nullptr;
+            while (inchi_lines_stream) {
+                rinchi_getline(inchi_lines_stream, line);
+                // ' line.rfind("ABC", 0) == 0 ' is equivalent to ' line.starts_with("ABC") '.
+                if (line.rfind("InChI=", 0) == 0) {
+                    if (c == nullptr || !c->inchi_string().empty()) {
+                        //** TODO: if c != nullptr => validate c.inchi_string and c.auxinfo.
+                        // Add new component to reaction.
+                        c = new ReactionComponent();
+                        components.push_back(c);
+                    }
+                    c->m_inchi_string = line;
+                }
+                else if (line.rfind("AuxInfo=", 0) == 0) {
+                    if (c->inchi_string().empty())
+                        throw new RInChIReaderError ("Line " + int2str(line_no) + ": AuxInfo without preceeding InChI string.");
+                    c->m_inchi_auxinfo = line;
+                }
+                else
+                    throw RInChIReaderError("Line " + int2str(line_no) + ": Unexpected line data; expected an InChI or AuxInfo string.");
+
+                ++line_no;
+            }
+        }
+
+        static void add_inchis_to_reaction(const std::string& reactant_inchis, const std::string& product_inchis, const std::string& agent_inchis, Reaction& rxn)
+        {
+            read_components(reactant_inchis, rxn.m_reactants);
+            read_components(product_inchis,  rxn.m_products);
+            read_components(agent_inchis,    rxn.m_agents);
+
+            rxn.m_is_cache_valid = false;
+        }
+
+    };
 }
 
 namespace rinchi {
@@ -363,6 +407,16 @@ for (ReactionComponentList::const_iterator rc = rxn.agents().begin(); rc != rxn.
 }
 #endif
 */
+}
+
+namespace {
+
+
+}
+
+void RInChIReader::add_inchis_to_reaction(const std::string& reactant_inchis, const std::string& product_inchis, const std::string& agent_inchis, Reaction& rxn)
+{
+    RInChIReaderHelper::add_inchis_to_reaction(reactant_inchis, product_inchis, agent_inchis, rxn);
 }
 
 } // end of namespace
