@@ -64,6 +64,10 @@ class RInChI:
 		self.lib_inchis_from_rinchi.argtypes = [c_char_p, c_char_p, POINTER(c_char_p)]
 		self.lib_inchis_from_rinchi.restype = c_long
 
+		self.lib_rinchi_from_inchis = self.lib_handle.rinchilib_rinchi_from_inchis
+		self.lib_rinchi_from_inchis.argtypes = [c_char_p, c_char_p, c_char_p, POINTER(c_char_p), POINTER(c_char_p)]
+		self.lib_rinchi_from_inchis.restype = c_long
+
 		self.lib_rinchikey_from_rinchi = self.lib_handle.rinchilib_rinchikey_from_rinchi
 		self.lib_rinchikey_from_rinchi.argtypes = [c_char_p, c_char_p, POINTER(c_char_p)]
 		self.lib_rinchikey_from_rinchi.restype = c_long
@@ -141,6 +145,13 @@ class RInChI:
 				raise Exception ("Unsupported component prefix '" + component_prefix + "'.")
 
 		return {"Direction": direction, "No-Structures": nostruct_counts, "Reactants": reactants, "Products": products, "Agents": agents}
+
+	def rinchi_from_inchis( self, reactant_inchis, product_inchis, agent_inchis ):
+		"""Calculates RInChI and RAuxInfo from pre-calculated InChI and AuxInfo data passed in as line-delimited text."""
+		result_rinchi_string  = c_char_p()
+		result_rinchi_auxinfo = c_char_p()
+		self.rinchi_errorcheck( self.lib_rinchi_from_inchis(reactant_inchis.encode('utf-8'), product_inchis.encode('utf-8'), agent_inchis.encode('utf-8'), byref(result_rinchi_string), byref(result_rinchi_auxinfo)) )
+		return [str(result_rinchi_string.value.decode('utf-8')), str(result_rinchi_auxinfo.value.decode('utf-8'))]
 
 	def rinchikey_from_rinchi( self, rinchi_string, key_type ):
 		"""Generates RInChI key of supplied RD or RXN file text."""

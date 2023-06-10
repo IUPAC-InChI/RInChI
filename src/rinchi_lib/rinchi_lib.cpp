@@ -260,6 +260,31 @@ extern "C" {
 		END_EXCP_CODE
 	}
 
+    API_EXPORT int rinchilib_rinchi_from_inchis(
+            const char* reactant_inchis, const char* product_inchis, const char* agent_inchis, const char** out_rinchi_string, const char** out_rinchi_auxinfo
+    )
+    {
+        BEGIN_EXCP_CODE
+        rinchi::Reaction rxn;
+        rinchi::RInChIReader reader;
+
+        std::string reactant_inchis_str;
+        std::string product_inchis_str;
+        std::string agent_inchis_str;
+        if (reactant_inchis != nullptr) reactant_inchis_str = reactant_inchis;
+        if (product_inchis  != nullptr) product_inchis_str  = product_inchis;
+        if (agent_inchis    != nullptr) agent_inchis_str    = agent_inchis;
+
+        reader.add_inchis_to_reaction(reactant_inchis_str, product_inchis_str, agent_inchis_str, rxn);
+
+        cpp_result1 = rxn.rinchi_string();
+        cpp_result2 = rxn.rinchi_auxinfo();
+
+        *out_rinchi_string  = cpp_result1.c_str();
+        *out_rinchi_auxinfo = cpp_result2.c_str();
+        END_EXCP_CODE
+    }
+
 	API_EXPORT int rinchilib_rinchikey_from_rinchi(
 		const char* rinchi_string, const char* key_type, const char** out_rinchi_key
 	)

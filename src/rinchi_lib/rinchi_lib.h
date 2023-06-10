@@ -111,6 +111,19 @@ int rinchilib_inchis_from_rinchi(
 );
 
 /**
+ * @brief rinchilib_rinchi_from_inchis() loads pre-calculated InChI strings, and optionally AuxInfo strings, from linefeed-delimited text input and outputs RInChI and RAuxInfo strings.
+ * @param reactant_inchis - Text lines with InChI lines or InChI+AuxInfo line pairs. NULL input is equivalent to a blank input string.
+ * @param product_inchis - Text lines with InChI lines or InChI+AuxInfo line pairs. NULL input is equivalent to a blank input string.
+ * @param agent_inchis - Text lines with InChI lines or InChI+AuxInfo line pairs. NULL input is equivalent to a blank input string.
+ * @param out_rinchi_string - Returned pointer to C-string with generated RInChI.
+ * @param out_rinchi_auxinfo - Returned pointer to C-string with generated RAuxInfo.
+ * @return Standard error code.
+ */
+int rinchilib_rinchi_from_inchis(
+        const char* reactant_inchis, const char* product_inchis, const char* agent_inchis, const char** out_rinchi_string, const char** out_rinchi_auxinfo
+);
+
+/**
  * @brief rinchilib_rinchikey_from_rinchi() generates an RInChI key from an RInChI string.
  * @param rinchi_string - RInChI string.
  * @param key_type - 1-letter string controlling the type of key generated: L(ong), S(hort) or W(eb).
