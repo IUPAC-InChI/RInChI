@@ -245,12 +245,12 @@ DIST          = ../lib/rinchi_utils.cpp \
 		../../INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll_b.c
 QMAKE_TARGET  = rinchi
 DESTDIR       = 
-TARGET        = librinchi.so.1.0.0
+TARGET        = librinchi.dylib.1.0.0
 TARGETA       = librinchi.a
-TARGET0       = librinchi.so
-TARGETD       = librinchi.so.1.0.0
-TARGET1       = librinchi.so.1
-TARGET2       = librinchi.so.1.0
+TARGET0       = librinchi.dylib
+TARGETD       = librinchi.dylib.1.0.0
+TARGET1       = librinchi.dylib.1
+TARGET2       = librinchi.dylib.1.0
 
 
 first: all

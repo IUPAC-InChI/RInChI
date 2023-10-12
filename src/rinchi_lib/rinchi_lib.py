@@ -43,7 +43,11 @@ class RInChI:
 		if os.sep == "\\":
 			self.lib_handle = cdll.LoadLibrary(lib_path + "/librinchi.dll")
 		else:
-			self.lib_handle = cdll.LoadLibrary(lib_path + "/librinchi.so.1.0.0")
+			# When on Mac, prefer .dylib files.
+			if os.path.exists(lib_path + "/librinchi.dylib.1.0.0"):
+				self.lib_handle = cdll.LoadLibrary(lib_path + "/librinchi.dylib.1.0.0")
+			else:
+				self.lib_handle = cdll.LoadLibrary(lib_path + "/librinchi.so.1.0.0")
 
 		self.lib_latest_error_message = self.lib_handle.rinchilib_latest_err_msg
 		self.lib_latest_error_message.restype = c_char_p
