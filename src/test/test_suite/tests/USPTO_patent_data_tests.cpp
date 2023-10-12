@@ -68,6 +68,11 @@ void USPTOPatentDataTests::rxnfiles_subset()
 		test_count++;
 
 		std::string test_filename_rinchis = test_filename.substr(0, test_filename.length() - 4) + ".txt";
+        // This single RXN file produces different RAuxInfo on Windows versus on Linux. This is an InChI
+        // issue that we cannot fix here; only work around.
+        if (test_filename == "./1976-US03964903-9091.rxn") {
+            test_filename_rinchis = test_filename.substr(0, test_filename.length() - 4) + "__LINUX.txt";
+        }
 
 		std::string expected_rinchi_string;
 		std::string expected_rinchi_auxinfo;
@@ -76,24 +81,12 @@ void USPTOPatentDataTests::rxnfiles_subset()
 			throw rinchi::unit_test::TestFailure (test_filename_rinchis + " does not exist.");
 		rinchi::rinchi_getline(expected_file, expected_rinchi_string);
 		rinchi::rinchi_getline(expected_file, expected_rinchi_auxinfo);
-/***		// Reformat Cambridge RInChI-s.
-		boost::replace_all(expected_rinchi_string, "RInChI=0.02.1S/", rinchi::RINCHI_STD_HEADER);
-		boost::replace_all(expected_rinchi_string, "///", rinchi::DELIM_GROUP);
-		boost::replace_all(expected_rinchi_string, "//", rinchi::DELIM_COMP);
 
-		boost::replace_all(expected_rinchi_auxinfo, "RAuxInfo=0.02.1/", rinchi::RINCHI_AUXINFO_HEADER);
-		boost::replace_all(expected_rinchi_auxinfo, "///", rinchi::DELIM_GROUP);
-		boost::replace_all(expected_rinchi_auxinfo, "//", rinchi::DELIM_COMP);
-***/
-		rinchi::Reaction rxn;
+        rinchi::Reaction rxn;
 		rinchi::MdlRxnfileReader rxn_reader;
 		rxn_reader.read_reaction(test_filename, rxn);
-//try {
 		rinchi::unit_test::check_is_equal(rxn.rinchi_string(), expected_rinchi_string, test_filename + ": RInChI string");
 		rinchi::unit_test::check_is_equal(rxn.rinchi_auxinfo(), expected_rinchi_auxinfo, test_filename + ": RAuxInfo");
-//        } catch (std::exception& e) {
-//            std::cout << "  FAILED: " << test_filename;
-//        }
 	}
 	std::cout << " [" << test_count << " files tested]";
 }
