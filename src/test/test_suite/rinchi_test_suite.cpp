@@ -52,6 +52,7 @@
 #include "rinchi_reader_tests.h"
 
 #include "Cambridge_data_tests.h"
+#include "USPTO_patent_data_tests.h"
 
 int main(int argc, char* argv[])
 {
@@ -73,6 +74,7 @@ int main(int argc, char* argv[])
 		rinchi_tests::SpecialAtomsTests().run_tests();
 		rinchi_tests::RInChIReaderTests().run_tests();
 		rinchi_tests::CambridgeRxnfileTests().run_tests();
+        rinchi_tests::USPTOPatentDataTests().run_tests();
 
 		rinchi::unit_test::GlobalTestStats().show_stats();
 

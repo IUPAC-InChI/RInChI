@@ -99,5 +99,6 @@ SOURCES += \
 	./../../../INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll_a.c \
 	./../../../INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll_a2.c \
 	./../../../INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll_b.c \
+    tests/USPTO_patent_data_tests.cpp
 
 unix|win32: LIBS += -lboost_filesystem -lboost_system
