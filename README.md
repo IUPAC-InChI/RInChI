@@ -7,7 +7,6 @@ Overview of the most important folders in this repository.
 
 ```
     +- doc/                  Documentation.
-    +- INCHI-1-SRC/          InChI source code.
     +- scripts/              Helper scripts.
     +- src/                  RInChI source code.
         +- example_apps/           RInChI command line applications.
@@ -17,10 +16,15 @@ Overview of the most important folders in this repository.
 ```
 
 # Building
-RInChI uses InChI 1 as its foundation and so the InChI source code is included
-in the INCHI-1-SRC folder. The INCHI-1-SRC folder is the result of running
-`scripts/download_inchi_source.sh`. Note that the script unpacks the downloaded
-archive into the current folder.
+RInChI uses InChI 1 as its foundation. The InChI source code must be present
+in a folder next to the RInChI folder, e.g. clone the InChI and the RInChI
+code from git into two folders in the same parent folder:
+
+```
+    +- <parent folder>
+        +- InChI/
+        +- RInChI/
+```
 
 RInChI has been built with Visual Studio 2019 on Microsoft Windows and GCC on
 Linux, Mac and Raspberry Pi. Tested platforms are Microsoft Server 2016
