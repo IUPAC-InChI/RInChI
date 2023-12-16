@@ -46,11 +46,11 @@ namespace rinchi_tests {
 
 class CambridgeRxnfileTests: public rinchi::unit_test::TestCase {
 	public:
-		void rinchi_0_02_regress();
+		void rinchi_0_02_regression();
 
 		CambridgeRxnfileTests()
 		{
-			REGISTER_TEST(CambridgeRxnfileTests, rinchi_0_02_regress);
+			REGISTER_TEST(CambridgeRxnfileTests, rinchi_0_02_regression);
 
 			goto_subdir("Cambridge_rxnfiles");
 		}

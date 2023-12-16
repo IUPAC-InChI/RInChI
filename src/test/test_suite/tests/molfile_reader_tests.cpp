@@ -52,7 +52,7 @@
 
 namespace rinchi_tests {
 
-void MolfileReaderTests::inchi_1_06_regress()
+void MolfileReaderTests::inchi_1_06_regression()
 {
 	std::ifstream sdfile ("INCHI-1_testset/InChI_TestSet.sdf");
 	std::ifstream expected_data ("INCHI-1_testset/its-std-01.inc");
