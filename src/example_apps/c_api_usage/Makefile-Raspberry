@@ -15,7 +15,7 @@ CXX           = g++
 DEFINES       = -DTARGET_API_LIB
 CFLAGS        =  -pipe -ansi -DCOMPILE_ANSI_ONLY -O2 -Wall -W -fPIC $(DEFINES)
 CXXFLAGS      =  -pipe -O2 -Wall -W -fPIC $(DEFINES)
-INCPATH       = -I. -I../../rinchi_lib -I../../lib -I../../parsers -I../../rinchi -I../../writers -I../../../INCHI-1-SRC/INCHI_BASE/src
+INCPATH       = -I. -I../../rinchi_lib -I../../lib -I../../parsers -I../../rinchi -I../../writers -I../../../../InChI/INCHI-1-SRC/INCHI_BASE/src
 QMAKE         = /usr/lib/x86_64-linux-gnu/qt5/bin/qmake
 DEL_FILE      = rm -f
 CHK_DIR_EXISTS= test -d
@@ -64,56 +64,56 @@ SOURCES       = ../../lib/rinchi_utils.cpp \
 		../../rinchi/rinchi_consts.cpp \
 		../../rinchi_lib/rinchi_lib.cpp \
 		c_api_usage.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_bns.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_io.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichican2.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicano.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicans.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichiprt3.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichiisot.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichimake.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichiqueu.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichiring.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichimap1.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichimap2.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichimap4.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichimak2.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichinorm.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichiparm.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichiprt1.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichiprt2.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichirvr1.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichirvr2.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichirvr3.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichirvr4.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichirvr5.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichirvr6.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichirvr7.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisort.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichister.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitaut.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ikey_base26.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ikey_dll.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt1.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt2.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt3.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt4.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/readinch.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/runichi.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/runichi2.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/runichi3.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/runichi4.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/sha2.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/strutil.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol2atom.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichiread.c \
-		../../../INCHI-1-SRC/INCHI_API/libinchi/src/ichilnct.c \
-		../../../INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll.c \
-		../../../INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll_a.c \
-		../../../INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll_a2.c \
-		../../../INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll_b.c 
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_bns.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_io.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichican2.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicano.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicans.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichiprt3.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichiisot.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimake.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichiqueu.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichiring.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimap1.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimap2.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimap4.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimak2.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichinorm.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichiparm.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichiprt1.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichiprt2.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichirvr1.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichirvr2.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichirvr3.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichirvr4.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichirvr5.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichirvr6.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichirvr7.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisort.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichister.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitaut.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ikey_base26.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ikey_dll.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt1.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt2.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt3.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt4.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/readinch.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/runichi.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/runichi2.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/runichi3.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/runichi4.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/sha2.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/strutil.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol2atom.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichiread.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/libinchi/src/ichilnct.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll_a.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll_a2.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll_b.c 
 OBJECTS       = rinchi_utils.o \
 		rinchi_logger.o \
 		inchi_api_intf.o \
@@ -196,56 +196,56 @@ DIST          = ../../lib/rinchi_utils.cpp \
 		../../rinchi/rinchi_consts.cpp \
 		../../rinchi_lib/rinchi_lib.cpp \
 		c_api_usage.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_bns.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_io.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichican2.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicano.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicans.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichiprt3.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichiisot.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichimake.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichiqueu.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichiring.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichimap1.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichimap2.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichimap4.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichimak2.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichinorm.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichiparm.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichiprt1.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichiprt2.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichirvr1.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichirvr2.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichirvr3.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichirvr4.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichirvr5.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichirvr6.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichirvr7.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisort.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichister.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitaut.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ikey_base26.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ikey_dll.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt1.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt2.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt3.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt4.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/readinch.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/runichi.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/runichi2.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/runichi3.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/runichi4.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/sha2.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/strutil.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol2atom.c \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichiread.c \
-		../../../INCHI-1-SRC/INCHI_API/libinchi/src/ichilnct.c \
-		../../../INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll.c \
-		../../../INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll_a.c \
-		../../../INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll_a2.c \
-		../../../INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll_b.c
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_bns.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_io.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichican2.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicano.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicans.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichiprt3.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichiisot.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimake.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichiqueu.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichiring.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimap1.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimap2.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimap4.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimak2.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichinorm.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichiparm.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichiprt1.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichiprt2.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichirvr1.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichirvr2.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichirvr3.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichirvr4.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichirvr5.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichirvr6.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichirvr7.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisort.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichister.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitaut.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ikey_base26.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ikey_dll.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt1.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt2.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt3.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt4.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/readinch.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/runichi.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/runichi2.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/runichi3.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/runichi4.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/sha2.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/strutil.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol2atom.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichiread.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/libinchi/src/ichilnct.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll_a.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll_a2.c \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll_b.c
 QMAKE_TARGET  = c_api_usage
 DESTDIR       = 
 TARGET        = c_api_usage
@@ -306,15 +306,15 @@ rinchi_logger.o: ../../lib/rinchi_logger.cpp ../../lib/rinchi_logger.h \
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o rinchi_logger.o ../../lib/rinchi_logger.cpp
 
 inchi_api_intf.o: ../../lib/inchi_api_intf.cpp ../../lib/inchi_api_intf.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ixa.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ixa.h \
 		../../lib/rinchi_platform.h \
 		../../lib/rinchi_utils.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o inchi_api_intf.o ../../lib/inchi_api_intf.cpp
 
 inchi_generator.o: ../../lib/inchi_generator.cpp ../../lib/inchi_generator.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ixa.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ixa.h \
 		../../lib/inchi_api_intf.h \
 		../../rinchi/rinchi_consts.h \
 		../../lib/rinchi_utils.h \
@@ -322,8 +322,8 @@ inchi_generator.o: ../../lib/inchi_generator.cpp ../../lib/inchi_generator.h \
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o inchi_generator.o ../../lib/inchi_generator.cpp
 
 rinchi_hashing.o: ../../lib/rinchi_hashing.cpp ../../lib/rinchi_hashing.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/sha2.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ikey_base26.h
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/sha2.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ikey_base26.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o rinchi_hashing.o ../../lib/rinchi_hashing.cpp
 
 mdl_molfile.o: ../../parsers/mdl_molfile.cpp ../../parsers/mdl_molfile.h
@@ -336,8 +336,8 @@ mdl_molfile_reader.o: ../../parsers/mdl_molfile_reader.cpp ../../parsers/mdl_mol
 		../../lib/rinchi_platform.h \
 		../../lib/rinchi_logger.h \
 		../../rinchi/rinchi_reaction.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ixa.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ixa.h \
 		../../lib/inchi_api_intf.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mdl_molfile_reader.o ../../parsers/mdl_molfile_reader.cpp
 
@@ -347,8 +347,8 @@ mdl_rxnfile_reader.o: ../../parsers/mdl_rxnfile_reader.cpp ../../lib/rinchi_util
 		../../parsers/mdl_rxnfile_reader.h \
 		../../parsers/generic_line_reader.h \
 		../../rinchi/rinchi_reaction.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ixa.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ixa.h \
 		../../parsers/mdl_molfile_reader.h \
 		../../lib/rinchi_logger.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mdl_rxnfile_reader.o ../../parsers/mdl_rxnfile_reader.cpp
@@ -359,8 +359,8 @@ mdl_rdfile_reader.o: ../../parsers/mdl_rdfile_reader.cpp ../../parsers/mdl_rdfil
 		../../lib/rinchi_utils.h \
 		../../lib/rinchi_platform.h \
 		../../rinchi/rinchi_reaction.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ixa.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ixa.h \
 		../../parsers/mdl_rxnfile_reader.h \
 		../../parsers/mdl_molfile_reader.h \
 		../../lib/rinchi_logger.h
@@ -368,8 +368,8 @@ mdl_rdfile_reader.o: ../../parsers/mdl_rdfile_reader.cpp ../../parsers/mdl_rdfil
 
 rinchi_reader.o: ../../parsers/rinchi_reader.cpp ../../parsers/rinchi_reader.h \
 		../../rinchi/rinchi_reaction.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ixa.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ixa.h \
 		../../rinchi/rinchi_consts.h \
 		../../lib/rinchi_utils.h \
 		../../lib/rinchi_platform.h \
@@ -382,8 +382,8 @@ mdl_rxnfile_writer.o: ../../writers/mdl_rxnfile_writer.cpp ../../lib/rinchi_util
 		../../parsers/mdl_rxnfile.h \
 		../../writers/mdl_rxnfile_writer.h \
 		../../rinchi/rinchi_reaction.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ixa.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ixa.h \
 		../../lib/inchi_generator.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mdl_rxnfile_writer.o ../../writers/mdl_rxnfile_writer.cpp
 
@@ -392,15 +392,15 @@ mdl_rdfile_writer.o: ../../writers/mdl_rdfile_writer.cpp ../../lib/rinchi_utils.
 		../../parsers/mdl_rdfile.h \
 		../../writers/mdl_rdfile_writer.h \
 		../../rinchi/rinchi_reaction.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ixa.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ixa.h \
 		../../writers/mdl_rxnfile_writer.h \
 		../../lib/inchi_generator.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mdl_rdfile_writer.o ../../writers/mdl_rdfile_writer.cpp
 
 rinchi_reaction.o: ../../rinchi/rinchi_reaction.cpp ../../lib/inchi_api_intf.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ixa.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ixa.h \
 		../../rinchi/rinchi_consts.h \
 		../../rinchi/rinchi_reaction.h \
 		../../lib/inchi_generator.h \
@@ -417,8 +417,8 @@ rinchi_lib.o: ../../rinchi_lib/rinchi_lib.cpp ../../lib/rinchi_platform.h \
 		../../lib/rinchi_utils.h \
 		../../rinchi/rinchi_consts.h \
 		../../rinchi/rinchi_reaction.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ixa.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ixa.h \
 		../../parsers/mdl_rxnfile.h \
 		../../parsers/mdl_rxnfile_reader.h \
 		../../parsers/generic_line_reader.h \
@@ -431,1009 +431,1063 @@ rinchi_lib.o: ../../rinchi_lib/rinchi_lib.cpp ../../lib/rinchi_platform.h \
 c_api_usage.o: c_api_usage.c ../../rinchi_lib/rinchi_lib.h
 	$(CC) -c $(CFLAGS) $(INCPATH) -o c_api_usage.o c_api_usage.c
 
-ichi_bns.o: ../../../INCHI-1-SRC/INCHI_BASE/src/ichi_bns.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitime.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichister.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicano.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o ichi_bns.o ../../../INCHI-1-SRC/INCHI_BASE/src/ichi_bns.c
+ichi_bns.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_bns.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitime.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichister.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/logging.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o ichi_bns.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_bns.c
 
-ichi_io.o: ../../../INCHI-1-SRC/INCHI_BASE/src/ichi_io.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_io.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicomp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/strutil.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o ichi_io.o ../../../INCHI-1-SRC/INCHI_BASE/src/ichi_io.c
+ichi_io.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_io.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_io.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicomp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/strutil.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o ichi_io.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_io.c
 
-ichican2.o: ../../../INCHI-1-SRC/INCHI_BASE/src/ichican2.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitime.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o ichican2.o ../../../INCHI-1-SRC/INCHI_BASE/src/ichican2.c
+ichican2.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichican2.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitime.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o ichican2.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichican2.c
 
-ichicano.o: ../../../INCHI-1-SRC/INCHI_BASE/src/ichicano.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitime.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o ichicano.o ../../../INCHI-1-SRC/INCHI_BASE/src/ichicano.c
+ichicano.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicano.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitime.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o ichicano.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicano.c
 
-ichicans.o: ../../../INCHI-1-SRC/INCHI_BASE/src/ichicans.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichister.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o ichicans.o ../../../INCHI-1-SRC/INCHI_BASE/src/ichicans.c
+ichicans.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicans.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichister.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o ichicans.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicans.c
 
-ichierr.o: ../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o ichierr.o ../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.c
+ichierr.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o ichierr.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.c
 
-ichiprt3.o: ../../../INCHI-1-SRC/INCHI_BASE/src/ichiprt3.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/strutil.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichimake.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_io.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o ichiprt3.o ../../../INCHI-1-SRC/INCHI_BASE/src/ichiprt3.c
+ichiprt3.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichiprt3.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/strutil.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimake.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_io.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o ichiprt3.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichiprt3.c
 
-ichiisot.o: ../../../INCHI-1-SRC/INCHI_BASE/src/ichiisot.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o ichiisot.o ../../../INCHI-1-SRC/INCHI_BASE/src/ichiisot.c
+ichiisot.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichiisot.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o ichiisot.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichiisot.c
 
-ichimake.o: ../../../INCHI-1-SRC/INCHI_BASE/src/ichimake.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichimake.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ixa.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/strutil.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichister.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_io.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitime.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o ichimake.o ../../../INCHI-1-SRC/INCHI_BASE/src/ichimake.c
+ichimake.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimake.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimake.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ixa.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/strutil.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichister.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_io.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitime.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o ichimake.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimake.c
 
-ichiqueu.o: ../../../INCHI-1-SRC/INCHI_BASE/src/ichiqueu.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o ichiqueu.o ../../../INCHI-1-SRC/INCHI_BASE/src/ichiqueu.c
+ichiqueu.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichiqueu.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o ichiqueu.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichiqueu.c
 
-ichiring.o: ../../../INCHI-1-SRC/INCHI_BASE/src/ichiring.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichiring.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o ichiring.o ../../../INCHI-1-SRC/INCHI_BASE/src/ichiring.c
+ichiring.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichiring.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichiring.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o ichiring.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichiring.c
 
-ichimap1.o: ../../../INCHI-1-SRC/INCHI_BASE/src/ichimap1.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o ichimap1.o ../../../INCHI-1-SRC/INCHI_BASE/src/ichimap1.c
+ichimap1.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimap1.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o ichimap1.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimap1.c
 
-ichimap2.o: ../../../INCHI-1-SRC/INCHI_BASE/src/ichimap2.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o ichimap2.o ../../../INCHI-1-SRC/INCHI_BASE/src/ichimap2.c
+ichimap2.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimap2.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o ichimap2.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimap2.c
 
-ichimap4.o: ../../../INCHI-1-SRC/INCHI_BASE/src/ichimap4.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o ichimap4.o ../../../INCHI-1-SRC/INCHI_BASE/src/ichimap4.c
+ichimap4.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimap4.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o ichimap4.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimap4.c
 
-ichimak2.o: ../../../INCHI-1-SRC/INCHI_BASE/src/ichimak2.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/strutil.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_io.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o ichimak2.o ../../../INCHI-1-SRC/INCHI_BASE/src/ichimak2.c
+ichimak2.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimak2.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/strutil.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_io.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/logging.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o ichimak2.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimak2.c
 
-ichinorm.o: ../../../INCHI-1-SRC/INCHI_BASE/src/ichinorm.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o ichinorm.o ../../../INCHI-1-SRC/INCHI_BASE/src/ichinorm.c
+ichinorm.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichinorm.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o ichinorm.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichinorm.c
 
-ichiparm.o: ../../../INCHI-1-SRC/INCHI_BASE/src/ichiparm.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/strutil.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicomp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_io.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o ichiparm.o ../../../INCHI-1-SRC/INCHI_BASE/src/ichiparm.c
+ichiparm.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichiparm.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/strutil.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicomp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_io.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o ichiparm.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichiparm.c
 
-ichiprt1.o: ../../../INCHI-1-SRC/INCHI_BASE/src/ichiprt1.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichister.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/strutil.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichimake.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_io.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o ichiprt1.o ../../../INCHI-1-SRC/INCHI_BASE/src/ichiprt1.c
+ichiprt1.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichiprt1.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichister.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/strutil.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimake.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_io.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/logging.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o ichiprt1.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichiprt1.c
 
-ichiprt2.o: ../../../INCHI-1-SRC/INCHI_BASE/src/ichiprt2.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/strutil.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichimake.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_io.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o ichiprt2.o ../../../INCHI-1-SRC/INCHI_BASE/src/ichiprt2.c
+ichiprt2.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichiprt2.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/strutil.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimake.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_io.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o ichiprt2.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichiprt2.c
 
-ichirvr1.o: ../../../INCHI-1-SRC/INCHI_BASE/src/ichirvr1.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitime.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichirvrs.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/strutil.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichiring.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_io.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o ichirvr1.o ../../../INCHI-1-SRC/INCHI_BASE/src/ichirvr1.c
+ichirvr1.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichirvr1.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitime.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichirvrs.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/strutil.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichiring.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_io.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o ichirvr1.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichirvr1.c
 
-ichirvr2.o: ../../../INCHI-1-SRC/INCHI_BASE/src/ichirvr2.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichister.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichirvrs.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/strutil.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichiring.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o ichirvr2.o ../../../INCHI-1-SRC/INCHI_BASE/src/ichirvr2.c
+ichirvr2.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichirvr2.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichister.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichirvrs.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/strutil.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichiring.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o ichirvr2.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichirvr2.c
 
-ichirvr3.o: ../../../INCHI-1-SRC/INCHI_BASE/src/ichirvr3.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitime.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichirvrs.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/strutil.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichiring.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o ichirvr3.o ../../../INCHI-1-SRC/INCHI_BASE/src/ichirvr3.c
+ichirvr3.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichirvr3.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitime.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichirvrs.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/strutil.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichiring.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o ichirvr3.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichirvr3.c
 
-ichirvr4.o: ../../../INCHI-1-SRC/INCHI_BASE/src/ichirvr4.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitime.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichirvrs.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/strutil.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichiring.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_io.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichimake.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o ichirvr4.o ../../../INCHI-1-SRC/INCHI_BASE/src/ichirvr4.c
+ichirvr4.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichirvr4.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitime.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichirvrs.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/strutil.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichiring.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_io.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimake.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o ichirvr4.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichirvr4.c
 
-ichirvr5.o: ../../../INCHI-1-SRC/INCHI_BASE/src/ichirvr5.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitime.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichirvrs.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/strutil.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichiring.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o ichirvr5.o ../../../INCHI-1-SRC/INCHI_BASE/src/ichirvr5.c
+ichirvr5.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichirvr5.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitime.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichirvrs.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/strutil.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichiring.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o ichirvr5.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichirvr5.c
 
-ichirvr6.o: ../../../INCHI-1-SRC/INCHI_BASE/src/ichirvr6.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitime.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichirvrs.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/strutil.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichiring.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o ichirvr6.o ../../../INCHI-1-SRC/INCHI_BASE/src/ichirvr6.c
+ichirvr6.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichirvr6.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitime.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichirvrs.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/strutil.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichiring.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o ichirvr6.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichirvr6.c
 
-ichirvr7.o: ../../../INCHI-1-SRC/INCHI_BASE/src/ichirvr7.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitime.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichirvrs.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/strutil.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichiring.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inchicmp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inchi_gui.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o ichirvr7.o ../../../INCHI-1-SRC/INCHI_BASE/src/ichirvr7.c
+ichirvr7.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichirvr7.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitime.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichirvrs.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/strutil.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichiring.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inchicmp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inchi_gui.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o ichirvr7.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichirvr7.c
 
-ichisort.o: ../../../INCHI-1-SRC/INCHI_BASE/src/ichisort.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o ichisort.o ../../../INCHI-1-SRC/INCHI_BASE/src/ichisort.c
+ichisort.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisort.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o ichisort.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisort.c
 
-ichister.o: ../../../INCHI-1-SRC/INCHI_BASE/src/ichister.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichister.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichiring.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicomp.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o ichister.o ../../../INCHI-1-SRC/INCHI_BASE/src/ichister.c
+ichister.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichister.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichister.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichiring.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicomp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o ichister.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichister.c
 
-ichitaut.o: ../../../INCHI-1-SRC/INCHI_BASE/src/ichitaut.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitime.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o ichitaut.o ../../../INCHI-1-SRC/INCHI_BASE/src/ichitaut.c
+ichitaut.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitaut.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitime.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o ichitaut.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitaut.c
 
-ikey_base26.o: ../../../INCHI-1-SRC/INCHI_BASE/src/ikey_base26.c ../../../INCHI-1-SRC/INCHI_BASE/src/ikey_base26.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o ikey_base26.o ../../../INCHI-1-SRC/INCHI_BASE/src/ikey_base26.c
+ikey_base26.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ikey_base26.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ikey_base26.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o ikey_base26.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ikey_base26.c
 
-ikey_dll.o: ../../../INCHI-1-SRC/INCHI_BASE/src/ikey_dll.c ../../../INCHI-1-SRC/INCHI_BASE/src/sha2.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ikey_base26.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ixa.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o ikey_dll.o ../../../INCHI-1-SRC/INCHI_BASE/src/ikey_dll.c
+ikey_dll.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ikey_dll.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/sha2.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ikey_base26.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ixa.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o ikey_dll.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ikey_dll.c
 
-mol_fmt1.o: ../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt1.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_io.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/strutil.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o mol_fmt1.o ../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt1.c
+mol_fmt1.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt1.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_io.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/strutil.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o mol_fmt1.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt1.c
 
-mol_fmt2.o: ../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt2.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_io.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o mol_fmt2.o ../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt2.c
+mol_fmt2.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt2.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_io.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o mol_fmt2.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt2.c
 
-mol_fmt3.o: ../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt3.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_io.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o mol_fmt3.o ../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt3.c
+mol_fmt3.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt3.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_io.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o mol_fmt3.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt3.c
 
-mol_fmt4.o: ../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt4.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_io.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/strutil.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/extr_ct.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o mol_fmt4.o ../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt4.c
+mol_fmt4.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt4.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_io.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/strutil.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o mol_fmt4.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt4.c
 
-readinch.o: ../../../INCHI-1-SRC/INCHI_BASE/src/readinch.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_io.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ixa.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/readinch.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o readinch.o ../../../INCHI-1-SRC/INCHI_BASE/src/readinch.c
+readinch.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/readinch.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_io.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ixa.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/readinch.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o readinch.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/readinch.c
 
-runichi.o: ../../../INCHI-1-SRC/INCHI_BASE/src/runichi.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitime.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/strutil.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_io.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ixa.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/readinch.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inchi_gui.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichirvrs.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichiring.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o runichi.o ../../../INCHI-1-SRC/INCHI_BASE/src/runichi.c
+runichi.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/runichi.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitime.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/strutil.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_io.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ixa.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/readinch.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inchi_gui.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichirvrs.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichiring.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o runichi.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/runichi.c
 
-runichi2.o: ../../../INCHI-1-SRC/INCHI_BASE/src/runichi2.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitime.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichister.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/strutil.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_io.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ixa.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/readinch.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inchi_gui.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichirvrs.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichiring.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o runichi2.o ../../../INCHI-1-SRC/INCHI_BASE/src/runichi2.c
+runichi2.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/runichi2.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitime.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichister.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/strutil.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_io.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ixa.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/readinch.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inchi_gui.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichirvrs.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichiring.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o runichi2.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/runichi2.c
 
-runichi3.o: ../../../INCHI-1-SRC/INCHI_BASE/src/runichi3.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitime.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/strutil.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_io.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ixa.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/readinch.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inchi_gui.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o runichi3.o ../../../INCHI-1-SRC/INCHI_BASE/src/runichi3.c
+runichi3.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/runichi3.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitime.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/strutil.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_io.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ixa.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/readinch.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inchi_gui.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o runichi3.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/runichi3.c
 
-runichi4.o: ../../../INCHI-1-SRC/INCHI_BASE/src/runichi4.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/strutil.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_io.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ixa.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/readinch.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inchi_gui.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o runichi4.o ../../../INCHI-1-SRC/INCHI_BASE/src/runichi4.c
+runichi4.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/runichi4.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/strutil.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_io.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ixa.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/readinch.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inchi_gui.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o runichi4.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/runichi4.c
 
-sha2.o: ../../../INCHI-1-SRC/INCHI_BASE/src/sha2.c ../../../INCHI-1-SRC/INCHI_BASE/src/sha2.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o sha2.o ../../../INCHI-1-SRC/INCHI_BASE/src/sha2.c
+sha2.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/sha2.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/sha2.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o sha2.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/sha2.c
 
-strutil.o: ../../../INCHI-1-SRC/INCHI_BASE/src/strutil.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/strutil.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichister.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_io.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichimain.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o strutil.o ../../../INCHI-1-SRC/INCHI_BASE/src/strutil.c
+strutil.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/strutil.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/strutil.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichister.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_io.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o strutil.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/strutil.c
 
-util.o: ../../../INCHI-1-SRC/INCHI_BASE/src/util.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicomp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/extr_ct.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o util.o ../../../INCHI-1-SRC/INCHI_BASE/src/util.c
+util.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicomp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o util.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.c
 
-mol2atom.o: ../../../INCHI-1-SRC/INCHI_BASE/src/mol2atom.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/strutil.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ixa.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o mol2atom.o ../../../INCHI-1-SRC/INCHI_BASE/src/mol2atom.c
+mol2atom.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol2atom.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/strutil.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ixa.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/logging.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o mol2atom.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol2atom.c
 
-ichiread.o: ../../../INCHI-1-SRC/INCHI_BASE/src/ichiread.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitime.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/strutil.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_io.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichister.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichiring.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichirvrs.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ixa.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o ichiread.o ../../../INCHI-1-SRC/INCHI_BASE/src/ichiread.c
+ichiread.o: ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichiread.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitime.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/strutil.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_io.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichister.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichiring.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichirvrs.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ixa.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o ichiread.o ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichiread.c
 
-ichilnct.o: ../../../INCHI-1-SRC/INCHI_API/libinchi/src/ichilnct.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicomp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_io.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ixa.h \
-		../../../INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll_b.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/readinch.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o ichilnct.o ../../../INCHI-1-SRC/INCHI_API/libinchi/src/ichilnct.c
+ichilnct.o: ../../../../InChI/INCHI-1-SRC/INCHI_API/libinchi/src/ichilnct.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicomp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_io.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ixa.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll_b.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/readinch.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o ichilnct.o ../../../../InChI/INCHI-1-SRC/INCHI_API/libinchi/src/ichilnct.c
 
-inchi_dll.o: ../../../INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/strutil.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_io.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicomp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ixa.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/readinch.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitime.h \
-		../../../INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o inchi_dll.o ../../../INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll.c
+inchi_dll.o: ../../../../InChI/INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/strutil.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_io.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicomp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ixa.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/readinch.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitime.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o inchi_dll.o ../../../../InChI/INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll.c
 
-inchi_dll_a.o: ../../../INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll_a.c ../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/strutil.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_io.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicomp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitime.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ixa.h \
-		../../../INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll_a.h \
-		../../../INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o inchi_dll_a.o ../../../INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll_a.c
+inchi_dll_a.o: ../../../../InChI/INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll_a.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/strutil.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_io.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicomp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitime.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ixa.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll_a.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o inchi_dll_a.o ../../../../InChI/INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll_a.c
 
-inchi_dll_a2.o: ../../../INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll_a2.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitime.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/strutil.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_io.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichimake.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichister.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicomp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ixa.h \
-		../../../INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll_a.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o inchi_dll_a2.o ../../../INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll_a2.c
+inchi_dll_a2.o: ../../../../InChI/INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll_a2.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitime.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/strutil.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_io.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimake.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichister.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicomp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ixa.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll_a.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o inchi_dll_a2.o ../../../../InChI/INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll_a2.c
 
-inchi_dll_b.o: ../../../INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll_b.c ../../../INCHI-1-SRC/INCHI_BASE/src/mode.h \
-		../../../INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ixa.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/strutil.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/util.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichi_io.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichicomp.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/ichitime.h \
-		../../../INCHI-1-SRC/INCHI_BASE/src/readinch.h \
-		../../../INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll.h \
-		../../../INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll_b.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o inchi_dll_b.o ../../../INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll_b.c
+inchi_dll_b.o: ../../../../InChI/INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll_b.c ../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mode.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/tbb/tbbmalloc_proxy_for_inchi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inchi_api.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ixa.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/incomdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichisize.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichidrp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/inpdef.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/mol_fmt.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/strutil.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/util.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichierr.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichimain.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicomn.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicano.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicant.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichinorm.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitaut.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_bns.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/extr_ct.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichi_io.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichicomp.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/ichitime.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/readinch.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_BASE/src/bcf_s.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll.h \
+		../../../../InChI/INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll_b.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o inchi_dll_b.o ../../../../InChI/INCHI-1-SRC/INCHI_API/libinchi/src/inchi_dll_b.c
 
 ####### Install
 
