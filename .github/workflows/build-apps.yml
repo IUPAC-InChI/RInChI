@@ -14,7 +14,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout RInChI.
+    - uses: actions/checkout@v4
+      with:
+        path: RInChI
+
+    - name: Checkout latest InChI.
+    - uses: actions/checkout@v4
+      with:
+        path: InChI
+        repository: IUPAC-InChI/InChI
 
     - name: Build RInChI command-line utility.
       run: cd src/example_apps/rinchi_cmdline/; make -f Makefile-64bit
