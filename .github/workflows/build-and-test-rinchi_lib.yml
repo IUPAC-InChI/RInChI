@@ -16,6 +16,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+      with:
+        path: RInChI
 
     - name: rinchi_lib build.
       run: cd src/rinchi_lib/ ; make -f Makefile-64bit
