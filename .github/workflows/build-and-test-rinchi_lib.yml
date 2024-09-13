@@ -15,6 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Checkout RInChI.
     - uses: actions/checkout@v4
       with:
         path: RInChI
