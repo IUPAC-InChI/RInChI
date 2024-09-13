@@ -15,15 +15,7 @@ jobs:
 
     steps:
     - name: Checkout RInChI.
-    - uses: actions/checkout@v4
-      with:
-        path: RInChI
-
-    - name: Checkout latest InChI.
-    - uses: actions/checkout@v4
-      with:
-        repository: IUPAC-InChI/InChI
-        path: InChI
+    - uses: actions/checkout@v2
 
     - name: Build RInChI command-line utility.
       run: cd RInChI/src/example_apps/rinchi_cmdline/; make -f Makefile-64bit
