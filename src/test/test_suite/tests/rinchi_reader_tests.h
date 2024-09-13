@@ -54,6 +54,9 @@ class RInChIReaderTests: public rinchi::unit_test::TestCase {
 		void agents_only();
 		void no_structures();
 
+		// Test direct load of component InChI strings via text input.
+		void load_inchis_from_text();
+
 		RInChIReaderTests()
 		{
 			REGISTER_TEST(RInChIReaderTests, error_cases);
@@ -63,6 +66,8 @@ class RInChIReaderTests: public rinchi::unit_test::TestCase {
 			REGISTER_TEST(RInChIReaderTests, products_only);
 			REGISTER_TEST(RInChIReaderTests, agents_only);
 			REGISTER_TEST(RInChIReaderTests, no_structures);
+
+			REGISTER_TEST(RInChIReaderTests, load_inchis_from_text);
 		}
 
 };

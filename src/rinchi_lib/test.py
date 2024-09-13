@@ -104,6 +104,29 @@ print ("==========")
 print (inchi_components['Reactants'])
 print (inchi_components['No-Structures'])
 
+# Load InChI text and calculate RInChI.
+print ("=== RInChI from InChI input text ===")
+print (rinchi.rinchi_from_inchis("""InChI=1S/C4H9BrO/c1-3(5)4(2)6/h3-4,6H,1-2H3/t3-,4+/m1/s1
+AuxInfo=1/0/N:4,1,3,2,6,5/it:im/rA:6nCCCCOBr/rB:s1;s2;s3;N2;P3;/rC:-.825,-.7557,0;-.4125,-.0412,0;.4125,-.0412,0;.825,.6733,0;-.626,.7557,0;.825,-.7557,0;
+InChI=1S/Na.H2O/h;1H2/q+1;/p-1
+AuxInfo=1/1/N:1;2/rA:2nNaO/rB:s1;/rC:-.4125,0,0;.4125,0,0;""", """InChI=1S/C4H8O/c1-3-4(2)5-3/h3-4H,1-2H3/t3-,4?/m0/s1
+AuxInfo=1/0/N:4,1,3,2,5/E:(1,2)(3,4)/it:im/rA:5nCCCCO/rB:N1;s2;P3;s2s3;/rC:-1.127,-.5635,0;-.4125,-.151,0;.4125,-.151,0;1.127,-.5635,0;0,.5635,0;""", ""))
+#   Expected: RInChI=1.00.1S/C4H8O/c1-3-4(2)5-3/h3-4H,1-2H3/t3-,4?/m0/s1<>C4H9BrO/c1-3(5)4(2)6/h3-4,6H,1-2H3/t3-,4+/m1/s1!Na.H2O/h;1H2/q+1;/p-1/d-
+#   Expected: RAuxInfo=1.00.1/0/N:4,1,3,2,5/E:(1,2)(3,4)/it:im/rA:5nCCCCO/rB:N1;s2;P3;s2s3;/rC:-1.127,-.5635,0;-.4125,-.151,0;.4125,-.151,0;1.127,-.5635,0;0,.5635,0;<>0/N:4,1,3,2,6,5/it:im/rA:6nCCCCOBr/rB:s1;s2;s3;N2;P3;/rC:-.825,-.7557,0;-.4125,-.0412,0;.4125,-.0412,0;.825,.6733,0;-.626,.7557,0;.825,-.7557,0;!1/N:1;2/rA:2nNaO/rB:s1;/rC:-.4125,0,0;.4125,0,0;
+
+#   Checking error propagation: Blank line in middle should cause "EOF expected" error.
+try:
+	print (rinchi.rinchi_from_inchis("""InChI=1S/C4H9BrO/c1-3(5)4(2)6/h3-4,6H,1-2H3/t3-,4+/m1/s1
+AuxInfo=1/0/N:4,1,3,2,6,5/it:im/rA:6nCCCCOBr/rB:s1;s2;s3;N2;P3;/rC:-.825,-.7557,0;-.4125,-.0412,0;.4125,-.0412,0;.825,.6733,0;-.626,.7557,0;.825,-.7557,0;
+InChI=1S/Na.H2O/h;1H2/q+1;/p-1
+
+AuxInfo=1/1/N:1;2/rA:2nNaO/rB:s1;/rC:-.4125,0,0;.4125,0,0;""", "", ""))
+	raise Exception("No error raised as expected, reading InChI input text.")
+except Exception as e:
+	print (str(e))
+
+# RInChI => RInChI keys.
+print ("=== RInChI keys from RInChI ===")
 print (rinchi.rinchikey_from_rinchi(rinchi_nostructs, "L"))
 print (rinchi.rinchikey_from_rinchi(rinchi_nostructs, "S"))
 print (rinchi.rinchikey_from_rinchi(rinchi_nostructs, "W"))
