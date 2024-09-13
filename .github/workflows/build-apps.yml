@@ -15,12 +15,12 @@ jobs:
 
     steps:
     - name: Checkout RInChI.
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v2
       with:
         path: RInChI
 
     - name: Checkout latest InChI.
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v2
       with:
         path: InChI
         repository: IUPAC-InChI/InChI
