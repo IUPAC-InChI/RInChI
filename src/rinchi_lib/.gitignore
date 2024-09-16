@@ -1,3 +1,5 @@
+.qmake.stash
 __pycache__/
 *.pyc
 librinchi.so*
+librinchi_qt.pro.user

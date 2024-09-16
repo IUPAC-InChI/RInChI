@@ -1,0 +1,4 @@
+.qmake.stash
+c_api_usage_qt.pro.user
+c_api_usage
+*.o

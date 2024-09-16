@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{32FF78C4-D654-4F4A-8232-F3FDDBE44FCC}") = "c_api_usage", "c_api_usage.vcxproj", "{AC8E452C-15F5-4F3E-915E-979E9D6772B6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC8E452C-15F5-4F3E-915E-979E9D6772B6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AC8E452C-15F5-4F3E-915E-979E9D6772B6}.Debug|Win32.Build.0 = Debug|Win32
+		{AC8E452C-15F5-4F3E-915E-979E9D6772B6}.Debug|x64.ActiveCfg = Debug|x64
+		{AC8E452C-15F5-4F3E-915E-979E9D6772B6}.Debug|x64.Build.0 = Debug|x64
+		{AC8E452C-15F5-4F3E-915E-979E9D6772B6}.Release|Win32.ActiveCfg = Release|Win32
+		{AC8E452C-15F5-4F3E-915E-979E9D6772B6}.Release|Win32.Build.0 = Release|Win32
+		{AC8E452C-15F5-4F3E-915E-979E9D6772B6}.Release|x64.ActiveCfg = Release|x64
+		{AC8E452C-15F5-4F3E-915E-979E9D6772B6}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

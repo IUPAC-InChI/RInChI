@@ -128,7 +128,7 @@ template <class Value, class Expected>
 	}
 }
 
-void check_errmsg_has_substr(const std::string& err_msg, const std::string& sub_str);
+void check_errmsg_has_substr(const std::string& err_msg, const std::string& sub_str, const std::string& additional_context = "");
 
 } } // End of namespaces.
 

@@ -14,10 +14,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout RInChI.
+      uses: actions/checkout@v4
+      with:
+        path: RInChI
+
+    - name: Checkout InChI.
+      uses: actions/checkout@v4
+      with:
+        repository: IUPAC-InChI/InChI
+        path: InChI
 
     - name: Install dependencies.
       run: sudo apt-get update && sudo apt-get install -yq libboost-dev libboost-system-dev libboost-filesystem-dev
 
     - name: Build and run test suite.
-      run: cd src/test/test_suite ; make -f Makefile-64bit DEFINES+=-DSKIP_MOLFILE_READER_INCHI_REGRESS_TEST ; cd .. ; ./test_suite/rinchi_test_suite
+      run: cd RInChI/src/test/test_suite ; make -f Makefile-64bit ; cd .. ; ./test_suite/rinchi_test_suite

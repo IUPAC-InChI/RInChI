@@ -44,6 +44,13 @@
   and key.
 **/
 
+/*
+* MSVC will warn that fopen() and strcpy() are insecure and will suggest using fopen_s() and
+* strcpy_s() instead. However, these are not easily available on POSIX platforms, so to keep
+* the example maximally portable, I have chosen to disable those MSVC warnings instead.
+*/
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -60,7 +67,7 @@ void read_rxn_text_from_file(const char* filename, char* buffer)
         fprintf(stderr, "ERROR: Cannot open %s.\n", filename);
         exit(1);
     }
-    // Check that we can hold all file data in the 'rxn_text' buffer.
+    /* Check that we can hold all file data in the 'rxn_text' buffer. */
     long file_size = -1;
     if (fseek(fp, 0L, SEEK_END) == 0) {
         file_size = ftell(fp);
@@ -75,7 +82,7 @@ void read_rxn_text_from_file(const char* filename, char* buffer)
             }
         }
     }
-    // Read all data from file.
+    /* Read all data from file. */
     if (fseek(fp, 0L, SEEK_SET) != 0) {
         fprintf(stderr, "ERROR: Failed to reset file %s.\n", filename);
         exit(3);
@@ -86,7 +93,7 @@ void read_rxn_text_from_file(const char* filename, char* buffer)
         fprintf(stderr, "ERROR: Error %d reading file %s.\n", file_error, filename);
         exit(4);
     }
-    buffer[data_length] = '\0'; // Doubly ensure that string is terminated.
+    buffer[data_length] = '\0'; /* Doubly ensure that string is terminated. */
     fclose(fp);
 }
 

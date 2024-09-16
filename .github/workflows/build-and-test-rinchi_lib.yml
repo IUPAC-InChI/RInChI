@@ -15,19 +15,30 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout RInChI.
+      uses: actions/checkout@v4
+      with:
+        path: RInChI
+
+    - name: Checkout InChI.
+      uses: actions/checkout@v4
+      with:
+        repository: IUPAC-InChI/InChI
+        path: InChI
 
     - name: rinchi_lib build.
-      run: cd src/rinchi_lib/ ; make -f Makefile-64bit
+      run: cd RInChI/src/rinchi_lib/ ; make -f Makefile-64bit
       
     - name: rinchi_lib check symbol visibility.
       # "! nm -D ..." tests that "INCHIGEN_Create" should NOT be present as symbol in .so file.
-      run: cd src/rinchi_lib/ ; ! nm -D librinchi.so | grep INCHIGEN_Create
+      run: cd RInChI/src/rinchi_lib/ ; ! nm -D librinchi.so | grep INCHIGEN_Create
     
     ## Python2 has been EOL for years, and has been removed from GitHub runner images.
     ## Removing official RInChI support for Python2 as well.
     ## - name: rinchi_lib test - python2.
-    ##  run: cd src/rinchi_lib/ ; python2 test.py > /tmp/py2-rinchi-lib-test-out.txt ; diff /tmp/py2-rinchi-lib-test-out.txt test.py.expected_output.txt
+    ##  run: cd RInChI/src/rinchi_lib/ ; python2 test.py > /tmp/py2-rinchi-lib-test-out.txt ; diff /tmp/py2-rinchi-lib-test-out.txt test.py.expected_output.txt
 
     - name: rinchi_lib test - python3.
-      run: cd src/rinchi_lib/ ; python3 test.py > /tmp/py3-rinchi-lib-test-out.txt ; diff /tmp/py3-rinchi-lib-test-out.txt test.py.expected_output.txt
+      run: cd RInChI/src/rinchi_lib/ ; python3 test.py > /tmp/py3-rinchi-lib-test-out.txt ; diff /tmp/py3-rinchi-lib-test-out.txt test.py.expected_output.txt
+
+

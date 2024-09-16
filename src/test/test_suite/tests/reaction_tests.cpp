@@ -149,7 +149,7 @@ void ReactionTests::parsing()
 		rinchi::unit_test::check_is_equal(rxn.agents().at(1)->inchi_auxinfo(), rxn2.agents().at(0)->inchi_auxinfo(), "Agent1 - AuxInfo.");
 		rinchi::unit_test::check_is_equal(rxn.agents().at(0)->inchi_string(), rxn2.agents().at(1)->inchi_string(), "Agent2 - InChI.");
 		rinchi::unit_test::check_is_equal(rxn.agents().at(0)->inchi_auxinfo(), rxn2.agents().at(1)->inchi_auxinfo(), "Agent2 - AuxInfo.");
-		rinchi::unit_test::check_is_equal(rxn.agents().at(2)->inchi_string(), rxn2.agents().at(2)->inchi_string(), "Agent3 - InChI.");
+	        rinchi::unit_test::check_is_equal(rxn.agents().at(2)->inchi_string(), rxn2.agents().at(2)->inchi_string(), "Agent3 - InChI.");
 		rinchi::unit_test::check_is_equal(rxn.agents().at(2)->inchi_auxinfo(), rxn2.agents().at(2)->inchi_auxinfo(), "Agent3 - AuxInfo.");
 	}
 

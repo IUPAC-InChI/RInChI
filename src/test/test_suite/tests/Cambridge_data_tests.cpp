@@ -52,7 +52,7 @@
 
 namespace rinchi_tests {
 
-void CambridgeRxnfileTests::rinchi_0_02_regress()
+void CambridgeRxnfileTests::rinchi_0_02_regression()
 {
 	boost::filesystem::path current_dir(".");
 	boost::filesystem::directory_iterator end_itr;

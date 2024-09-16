@@ -14,13 +14,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout RInChI.
+      uses: actions/checkout@v4
+      with:
+        path: RInChI
+
+    - name: Checkout InChI.
+      uses: actions/checkout@v4
+      with:
+        repository: IUPAC-InChI/InChI
+        path: InChI
 
     - name: Build RInChI command-line utility.
-      run: cd src/example_apps/rinchi_cmdline/; make -f Makefile-64bit
+      run: cd RInChI/src/example_apps/rinchi_cmdline/; make -f Makefile-64bit
 
     - name: Build RInChI - "Reaction from molfiles" example app.
-      run: cd src/example_apps/rxn_from_molfiles/ ; make -f Makefile-64bit
+      run: cd RInChI/src/example_apps/rxn_from_molfiles/ ; make -f Makefile-64bit
 
     - name: Build RInChI - "C API usage" example app.
-      run: cd src/example_apps/c_api_usage/ ; make -f Makefile-64bit
+      run: cd RInChI/src/example_apps/c_api_usage/ ; make -f Makefile-64bit

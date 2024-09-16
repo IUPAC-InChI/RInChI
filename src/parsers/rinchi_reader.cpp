@@ -89,6 +89,11 @@ namespace rinchi {
 					inchi_string = inchigroup.substr(token_start);
 				}
 
+                trim_right(inchi_string, " ");
+                trim_left(inchi_string, " ");
+                if (inchi_string.find_first_of(" \n\t") != std::string::npos)
+                    throw RInChIReaderError("Invalid trailing text in component InChI '" + inchi_string + "'.");
+
 				inchi_string = INCHI_STD_HEADER + inchi_string;
 				// Validate and cleanup InChI input.
 				InChIGenerator().validate_inchi(inchi_string);
