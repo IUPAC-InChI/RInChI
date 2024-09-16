@@ -49,17 +49,6 @@ namespace rinchi_tests {
   read MDL molfiles and convert them to InChI input data structures
   in a way that produces the same InChIs as the standard InChI 1.06
   executable. This is fundamental for RInChI to work correctly.
-
-  This test runs through the - rather large - SD file supplied with
-  the InChI 1.06 test suite. To run the regression test you must have
-  downloaded the InChI 1.06 test suite data set. Instructions for
-  downloading the InChI test data set is in ../../BUILD.txt.
-
-  Running the regression test is only strictly necessary if you change
-  the code in mdl_molfile_reader.cpp or inchi_api_intf.cpp. For that
-  reason, automated tests triggered by pushes and pull requests run
-  the test suite with SKIP_MOLFILE_READER_INCHI_REGRESS_TEST defined.
-
 **/
 
 class MolfileReaderTests: public rinchi::unit_test::TestCase {
@@ -77,11 +66,7 @@ class MolfileReaderTests: public rinchi::unit_test::TestCase {
 
 		MolfileReaderTests()
 		{
-		    // If you haven't downloaded the InChI test data, compile with this
-		    // define to skip the regression test.
-		    #ifndef SKIP_MOLFILE_READER_INCHI_REGRESS_TEST
 			REGISTER_TEST(MolfileReaderTests, inchi_1_06_regression);
-		    #endif
 			REGISTER_TEST(MolfileReaderTests, old_style_molfiles);
 			REGISTER_TEST(MolfileReaderTests, V3000_reader);
 		}
