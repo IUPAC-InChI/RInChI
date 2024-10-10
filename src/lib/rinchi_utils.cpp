@@ -1,39 +1,9 @@
 #ifdef MSVC
-#pragma region BSD-license
-/*
- * Reaction International Chemical Identifier (RInChI)
- * Version 1
- * Software version 1.00
- * 2022-01-14
- * 
- * This source file is based on work created by Biochemfusion Holding ApS.
- * It is released under a BSD-style license.
- * 
- * Copyright (C) 2010 - 2015, Biochemfusion Holding ApS
- * (http://www.biochemfusion.com). All rights reserved.
- * 
- * Redistribution and use for any purpose in source and binary forms, with or
- * without modification, are permitted, subject to the following restrictions:
- *
- * 1. The origin of this software must not be misrepresented; you must not
- *    claim that you wrote the original software. If you use this software
- *    in a product, an acknowledgment in the product documentation would be
- *    appreciated but is not required.
- * 2. Altered source versions must be plainly marked as such, and must not be
- *    misrepresented as being the original software.
- * 3. This notice may not be removed or altered from any source distribution.
- *
- * THIS SOFTWARE IS PROVIDED BY Biochemfusion Holding ApS ``AS IS'' AND ANY
- * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
- * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
- * DISCLAIMED. IN NO EVENT SHALL Biochemfusion Holding ApS BE LIABLE FOR ANY
- * DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
- * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
- * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
- * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
- * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
- * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-*/
+#pragma region RInChI-license
+// Copyright (C) 2017 - 2024 InChI Project. All Rights Reserved.
+// This file is part of the RInChI source code.
+// The contents are covered by the terms of the MIT license
+// included in the file ./../../LICENCE.txt.
 #pragma endregion
 #endif
 
