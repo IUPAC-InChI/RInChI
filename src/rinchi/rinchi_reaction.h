@@ -98,7 +98,7 @@ private:
 	// For RInChI and RAuxInfo output No-Structures are irrelevant for the group count, but they
 	// are relevant for the output of e.g. the RInChI long key.
 	int num_output_groups(bool consider_nostruct_counts);
-	// Calculate above member variables (below 'm_has_rinchi') if 'm_has_rinchi' is false.
+	// Calculate above member variables (below 'm_is_cache_valid') if 'm_is_cache_valid' is false.
 	void update_cache();
 public:
 	Reaction();
