@@ -7,13 +7,16 @@
 #pragma endregion
 #endif
 
-#include <inchi_api_intf.h>
+#include <mutex>
+#include <thread>
 
 #include <string>
 #include <stdexcept>
 
-#include <rinchi_platform.h>
-#include <rinchi_utils.h>
+#include "inchi_api_intf.h"
+
+#include "rinchi_platform.h"
+#include "rinchi_utils.h"
 
 /** PLATFORMS BEGIN **/
 
@@ -119,8 +122,17 @@ int lazyload_Get_inchi_Input_FromAuxInfo(char *szInchiAuxInfo, int bDoNotAddH, i
 // void INCHI_DECL Free_inchi_Input( inchi_Input *pInp )
 void lazyload_Free_inchi_Input( inchi_Input *pInp );
 
+std::mutex library_load_mutex;
+
 void load_inchi_library()
 {
+    // Aquire mutex.
+    const std::lock_guard<std::mutex> lock(library_load_mutex);
+    // Sanity check: If someone else came here first and successfully
+    // loaded the library, then exit.
+    if (inchi_lib_handle != 0)
+        return;
+
 	if (inchi_lib_path.length() == 0) {
 		inchi_lib_path = inchi_lib_path_c_str;
 		// Strip filename from C-style path - it will contain a module filename if it is set by a DLL init function.
