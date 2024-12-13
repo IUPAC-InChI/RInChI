@@ -98,7 +98,7 @@ namespace rinchi {
 				// Validate and cleanup InChI input.
 				InChIGenerator().validate_inchi(inchi_string);
 
-				std::auto_ptr<ReactionComponent> cmp (new ReactionComponent());
+				std::unique_ptr<ReactionComponent> cmp (new ReactionComponent());
 				components.push_back(cmp.get());
 				ReactionComponent* tmp_cmp = cmp.release();
 				tmp_cmp->m_inchi_string = inchi_string;
@@ -389,7 +389,7 @@ void RInChIReader::split_into_reaction(const std::string& rinchi_string, const s
 
 		for (int i = 0; i < RINCHI_NUM_GROUPS; i++) {
 			for (int k = 0; k < rxn.m_nostruct_counts[i]; k++) {
-				std::auto_ptr<ReactionComponent> cmp (new ReactionComponent());
+				std::unique_ptr<ReactionComponent> cmp (new ReactionComponent());
 				rc_lists[i]->push_back(cmp.get());
 				ReactionComponent* tmp_cmp = cmp.release();
 				tmp_cmp->m_inchi_string  = NOSTRUCT_INCHI;

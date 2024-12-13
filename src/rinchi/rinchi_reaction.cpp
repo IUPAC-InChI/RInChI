@@ -157,7 +157,7 @@ namespace {
 
 	ReactionComponent* add_new_component_to_list(ReactionComponentList& list)
 	{
-		std::auto_ptr<ReactionComponent> cmp (new ReactionComponent());
+		std::unique_ptr<ReactionComponent> cmp (new ReactionComponent());
 		list.push_back(cmp.get());
 		return cmp.release();
 	}
