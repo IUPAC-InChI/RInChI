@@ -44,7 +44,7 @@
 	#define ON_WINDOWS
 // TODO: Define MSVC appropriately. And use that condition directly above.
 	const char DIR_SEPARATOR = '\\';
-#elif defined(linux)
+#elif defined(__linux__)
 	#define ON_LINUX
 	const char DIR_SEPARATOR = '/';
 	#if defined(__i386__) || defined(__x86_64__)
