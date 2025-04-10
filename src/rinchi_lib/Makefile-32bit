@@ -14,7 +14,7 @@ CC            = gcc
 CXX           = g++
 DEFINES       = -DTARGET_API_LIB
 CFLAGS        = -m32 -pipe -ansi -DCOMPILE_ANSI_ONLY -fvisibility=hidden -O2 -Wall -W -fPIC $(DEFINES)
-CXXFLAGS      = -m32 -pipe -fvisibility=hidden -O2 -Wall -W -fPIC $(DEFINES)
+CXXFLAGS      = -m32 -pipe -std=c++11 -fvisibility=hidden -O2 -Wall -W -fPIC $(DEFINES)
 INCPATH       = -I. -I../lib -I../parsers -I../rinchi -I../writers -I../../../InChI/INCHI-1-SRC/INCHI_BASE/src
 QMAKE         = /usr/lib/x86_64-linux-gnu/qt5/bin/qmake
 DEL_FILE      = rm -f

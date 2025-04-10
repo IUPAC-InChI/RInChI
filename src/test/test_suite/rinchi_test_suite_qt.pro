@@ -7,6 +7,7 @@ DEFINES  += IN_RINCHI_TEST_SUITE
 # InChI 1.0.6 required target definition.
 DEFINES  += TARGET_API_LIB
 QMAKE_CFLAGS += -ansi -DCOMPILE_ANSI_ONLY
+QMAKE_CXXFLAGS += -std=c++11
 
 TEMPLATE = app
 
