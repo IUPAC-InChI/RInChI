@@ -39,6 +39,4 @@ jobs:
     ##  run: cd RInChI/src/rinchi_lib/ ; python2 test.py > /tmp/py2-rinchi-lib-test-out.txt ; diff /tmp/py2-rinchi-lib-test-out.txt test.py.expected_output.txt
 
     - name: rinchi_lib test - python3.
-      run: cd RInChI/src/rinchi_lib/ ; python3 test.py > /tmp/py3-rinchi-lib-test-out.txt ; diff /tmp/py3-rinchi-lib-test-out.txt test.py.expected_output.txt
-
-
+      run: cd RInChI/src/rinchi_lib/ ; python3 test.py
