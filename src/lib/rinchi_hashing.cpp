@@ -142,7 +142,7 @@ std::string hash17char(const std::string& input)
 	result += base26_triplet_3(chksum);
 	result += base26_triplet_4(chksum);
 	result += base26_dublet_for_bits_56_to_64(chksum);
-	// chksum[8] = bits 65->...
+	// chksum[8] = bits 64.. (bit 64 is used twice)
 	result += base26_triplet_1(&chksum[8]);
 #ifdef RINCHI_DEBUG_OUTPUT_HASHING
 	std::cout << "[#17[" << input << "]#] => " << result << std::endl;
@@ -157,3 +157,4 @@ const std::string HASH_14_EMPTY_STRING = "UHFFFADPSCTJAU";
 const std::string HASH_17_EMPTY_STRING = "UHFFFADPSCTJAUYIS";
 
 } // end of namespace
+
